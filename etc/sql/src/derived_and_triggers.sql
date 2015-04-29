@@ -12,3 +12,11 @@ BEGIN
 	UPDATE questions SET exam_count = exam_count - 1 WHERE id = :old.question_id
 END;
 /
+
+CREATE TRIGGER question_exam_insert AFTER UPDATE OF question_id ON exams_questions
+FOR EACH ROW
+BEGIN
+    UPDATE questions SET exam_count = exam_count - 1 WHERE id = :old.question_id;
+	UPDATE questions SET exam_count = exam_count + 1 WHERE id = :new.question_id;
+END;
+/

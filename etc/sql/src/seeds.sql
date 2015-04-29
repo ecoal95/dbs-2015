@@ -40,36 +40,36 @@ INSERT INTO questions VALUES(0001, '¿Cuál de estas funciones representa una co
 INSERT INTO questions VALUES(0002, 'Indica cuál de los siguientes TAD sigue un esquema LIFO (Last In, First Out):');
 INSERT INTO questions VALUES(0003, '¿Qué es un AFD?');
 INSERT INTO questions VALUES(0004, 'Señala cuál de las siguientes afirmaciones sobre las empresas es correcta:');
-INSERT INTO questions VALUES(0005, '¿En qué consiste la planificación del procesador');
+INSERT INTO questions VALUES(0005, '¿En qué consiste la planificación del procesador?');
 
 
 
 --Table "answers"
 --Priority could be '1', '2' or '3'... in priority's descending order
-INSERT INTO answers VALUES(000100, 'A) nlog(n)', 'V', 1, 0001);
-INSERT INTO answers VALUES(000101, 'B) n^2', 'F', 2, 0001);
-INSERT INTO answers VALUES(000102, 'C) n', 'F', 3, 0001);
-INSERT INTO answers VALUES(000103, 'D) n^3', 'F', 4, 0001);
+INSERT INTO answers VALUES(000100, 'A) nlog(n)', 1, 1, 0001);
+INSERT INTO answers VALUES(000101, 'B) n^2', 0, 2, 0001);
+INSERT INTO answers VALUES(000102, 'C) n', 0, 3, 0001);
+INSERT INTO answers VALUES(000103, 'D) n^3', 0, 4, 0001);
 -------------------------------------------------------------------------------------------------------------
-INSERT INTO answers VALUES(000200, 'A) Colas', 'F', 1, 0002);
-INSERT INTO answers VALUES(000201, 'B) Pilas', 'V', 2, 0002);
-INSERT INTO answers VALUES(000202, 'C) Grafos', 'F', 3, 0002);
-INSERT INTO answers VALUES(000203, 'D) Conjuntos Disjuntos', 'F', 4, 0002);
+INSERT INTO answers VALUES(000200, 'A) Colas', 0, 1, 0002);
+INSERT INTO answers VALUES(000201, 'B) Pilas', 1, 2, 0002);
+INSERT INTO answers VALUES(000202, 'C) Grafos', 0, 3, 0002);
+INSERT INTO answers VALUES(000203, 'D) Conjuntos Disjuntos', 0, 4, 0002);
 -------------------------------------------------------------------------------------------------------------
-INSERT INTO answers VALUES(000300, 'A) Autómata Finito No Determinsita', 'F', 1, 0003);
-INSERT INTO answers VALUES(000301, 'B) Máquina de Turing', 'F', 2, 0003);
-INSERT INTO answers VALUES(000302, 'C) Autómata Finito Determinista', 'V', 3, 0003);
-INSERT INTO answers VALUES(000303, 'D) Conjunto Universal', 'F', 4, 0003);
+INSERT INTO answers VALUES(000300, 'A) Autómata Finito No Determinsita', 0, 1, 0003);
+INSERT INTO answers VALUES(000301, 'B) Máquina de Turing', 0, 2, 0003);
+INSERT INTO answers VALUES(000302, 'C) Autómata Finito Determinista', 1, 3, 0003);
+INSERT INTO answers VALUES(000303, 'D) Conjunto Universal', 0, 4, 0003);
 -------------------------------------------------------------------------------------------------------------
-INSERT INTO answers VALUES(000400, 'A) Debe de maximizar beneficios minimizando costes', 'V', 1, 0004);
-INSERT INTO answers VALUES(000401, 'B) Debe de minimizar beneficios maximizando costes', 'F', 2, 0004);
-INSERT INTO answers VALUES(000402, 'C) Debe de maximizar beneficios maximizando costes', 'F', 3, 0004);
-INSERT INTO answers VALUES(000403, 'D) Debe de minimizar beneficios minimizando costes', 'F', 4, 0004);
+INSERT INTO answers VALUES(000400, 'A) Debe de maximizar beneficios minimizando costes', 1, 1, 0004);
+INSERT INTO answers VALUES(000401, 'B) Debe de minimizar beneficios maximizando costes', 0, 2, 0004);
+INSERT INTO answers VALUES(000402, 'C) Debe de maximizar beneficios maximizando costes', 0, 3, 0004);
+INSERT INTO answers VALUES(000403, 'D) Debe de minimizar beneficios minimizando costes', 0, 4, 0004);
 -------------------------------------------------------------------------------------------------------------
-INSERT INTO answers VALUES(000500, 'A) Formatear los datos contenidos en un Disco Duro', 'F', 1, 0005);
-INSERT INTO answers VALUES(000501, 'B) Varias personas utilizando un mismo Sistema a la vez', 'F', 2, 0005);
-INSERT INTO answers VALUES(000502, 'C) Gestión de los mecanismos IPC del Sistema Operativo', 'F', 3, 0005);
-INSERT INTO answers VALUES(000503, 'D) Dar un buen servicio a los procesos de un Sistema', 'V', 4, 0005);
+INSERT INTO answers VALUES(000500, 'A) Formatear los datos contenidos en un Disco Duro', 0, 1, 0005);
+INSERT INTO answers VALUES(000501, 'B) Varias personas utilizando un mismo Sistema a la vez', 0, 2, 0005);
+INSERT INTO answers VALUES(000502, 'C) Gestión de los mecanismos IPC del Sistema Operativo', 0, 3, 0005);
+INSERT INTO answers VALUES(000503, 'D) Dar un buen servicio a los procesos de un Sistema', 1, 4, 0005);
 
 
 
@@ -82,21 +82,21 @@ INSERT INTO exams VALUES(0005, 2015, 2, 00050);
 
 
 
---Table "asks_questions" -- OLD ASKS_THEMES
-INSERT INTO asks_questions VALUES(0001, 0001);
-INSERT INTO asks_questions VALUES(0002, 0002);
-INSERT INTO asks_questions VALUES(0003, 0003);
-INSERT INTO asks_questions VALUES(0004, 0004);
-INSERT INTO asks_questions VALUES(0005, 0005);
+--Table "questions_themes" -- OLD ASKS_THEMES
+INSERT INTO questions_themes VALUES(0001, 0001);
+INSERT INTO questions_themes VALUES(0002, 0002);
+INSERT INTO questions_themes VALUES(0003, 0003);
+INSERT INTO questions_themes VALUES(0004, 0004);
+INSERT INTO questions_themes VALUES(0005, 0005);
 
 
 
---Table "subject_themes" -- OLD ASKS_EXAMS
-INSERT INTO subject_themes VALUES(0001, 0001);
-INSERT INTO subject_themes VALUES(0002, 0002);
-INSERT INTO subject_themes VALUES(0003, 0003);
-INSERT INTO subject_themes VALUES(0004, 0004);
-INSERT INTO subject_themes VALUES(0005, 0005);
+--Table "exams_questions" -- OLD ASKS_EXAMS
+INSERT INTO exams_questions VALUES(0001, 0001);
+INSERT INTO exams_questions VALUES(0002, 0002);
+INSERT INTO exams_questions VALUES(0003, 0003);
+INSERT INTO exams_questions VALUES(0004, 0004);
+INSERT INTO exams_questions VALUES(0005, 0005);
 
 
 
