@@ -4,7 +4,8 @@
 #include <string.h>
 #include "question.h"
 #include "answer.h"
-#include "macros.h"
+#include "interactive.h"
+#include "common.h"
 
 #include <commands.h>
 
@@ -13,28 +14,19 @@ int create_question(int argc, char** argv) {
     char is_correct;
 
     printf("Give me the statement:");
-    fgets(buffer, sizeof(buffer), stdin);
+    get_str(buffer, sizeof(buffer));
 
-    fflush(stdin);
-    buffer[sizeof(buffer) - 1] = '\0';
-    // Trim trailing \n
-    buffer[strlen(buffer) - 1] = '\0';
+    char* args[] = { "-a", buffer, NULL };
+    question(2, args);
 
-    char* args = { "-a", buffer, NULL };
-    int id = question(2, args);
-    char* id_str = int_to_str(id);
+    char* id_str = NULL;
 
     while ( 1 ) {
-        printf("Give me one answer (<ctrl + d> to stop):");
-        fgets(buffer, sizeof(buffer), stdin);
+        printf("Give me one answer (empty to stop):");
+        get_str(buffer, sizeof(buffer));
 
         if ( ! *buffer )
             break;
-
-        fflush(stdin);
-        buffer[sizeof(buffer) - 1] = '\0';
-        // Trim trailing \n
-        buffer[strlen(buffer) - 1] = '\0';
 
         printf("Is correct? (Y/n):");
         do {
@@ -42,14 +34,14 @@ int create_question(int argc, char** argv) {
         } while ( is_correct != 'n' && is_correct != 'Y' );
 
         if ( is_correct == 'Y' ) {
-            char* args = { "-a", id_str, buffer, "--correct", NULL };
+            char* args[] = { "-a", id_str, buffer, "--correct", NULL };
             answer(4, args);
         } else {
-            char* args = { "-a", id_str, buffer, NULL };
+            char* args[] = { "-a", id_str, buffer, NULL };
             answer(3, args);
         }
     }
-    
+
     return 1;
 }
 
@@ -68,7 +60,7 @@ struct command commands[] = {
         "\t-a\tcreates an answer\t-a <question_id> <statement> [--correct]"
         "\t-l\tlist answers for a question\t-l <question_id>"
         "\t-d\tdeletes a question\t-d <id>" },
-    { "create-question", create_question, "creates a new question prompting for data", NULL },
+    { "interactive", interactive, "Open an interactive session" },
     { NULL, NULL, NULL, NULL } // End of the list
 };
 

@@ -1,5 +1,5 @@
 // vim: set syntax=c:
-#include "macros.h"
+#include "common.h"
 #include "question.h"
 #include "answer.h"
 
@@ -26,6 +26,9 @@ int question(int argc, char** argv) {
         COPY_TO_VARCHAR(statement, argv[0], 255);
         EXEC SQL INSERT INTO questions (statement) VALUES (:statement)
             RETURNING id INTO :id;
+
+        appcom.ret.int_value = id;
+        snprintf(appcom.ret.str_value, APPCOM_RET_STR_MAX, "%d", id);
         // We return the id printing it
         printf("%d\n", id);
         return 0;

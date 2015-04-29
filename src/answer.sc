@@ -1,6 +1,6 @@
 // vim:set syntax=c:
 #include "answer.h"
-#include "macros.h"
+#include "common.h"
 
 int list_answers(int argc, char** argv);
 

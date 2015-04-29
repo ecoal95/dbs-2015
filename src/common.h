@@ -1,8 +1,18 @@
 #ifndef MACROS_H_
 #define MACROS_H_
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
+#define APPCOM_RET_STR_MAX 70
+struct appcom {
+    struct {
+        int int_value;
+        char str_value[APPCOM_RET_STR_MAX];
+    } ret;
+};
+
+extern struct appcom appcom;
 void handle_error();
 
 #ifdef POSTGRES
@@ -23,4 +33,5 @@ void handle_error();
     vchar.len = strlen(vchar.arr); \
 } while ( 0 )
 
+void get_str(char*, size_t);
 #endif
