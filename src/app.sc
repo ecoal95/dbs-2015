@@ -37,7 +37,7 @@ void handle_error() {
 
 
 
-
+/// Comentario de prueba
 int main(int argc, char** argv) {
     EXEC SQL WHENEVER SQLERROR DO handle_error();
     EXEC SQL CONNECT TO exams;
