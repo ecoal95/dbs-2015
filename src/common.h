@@ -12,8 +12,13 @@ struct appcom {
     } ret;
 };
 
-extern struct appcom appcom;
 void handle_error();
+extern struct appcom appcom;
+
+#define APPCOM_RET_INT(val) do { \
+    appcom.ret.int_value = val; \
+    snprintf(appcom.ret.str_value, APPCOM_RET_STR_MAX, "%d", val); \
+} while (0)
 
 #ifdef POSTGRES
 #  define NOT_FOUND ECPG_NOT_FOUND

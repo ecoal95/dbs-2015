@@ -27,8 +27,8 @@ int question(int argc, char** argv) {
         EXEC SQL INSERT INTO questions (statement) VALUES (:statement)
             RETURNING id INTO :id;
 
-        appcom.ret.int_value = id;
-        snprintf(appcom.ret.str_value, APPCOM_RET_STR_MAX, "%d", id);
+        APPCOM_RET_INT(id);
+
         // We return the id printing it
         printf("%d\n", id);
         return 0;

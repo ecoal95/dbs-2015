@@ -56,9 +56,9 @@ struct command commands[] = {
         "\t-l\tlists all questions\t-l\n"
         "Prints the question id on success to stdout." },
     { "answer", answer, "manages answers",
-        "Usage: answer [args...]"
-        "\t-a\tcreates an answer\t-a <question_id> <statement> [--correct]"
-        "\t-l\tlist answers for a question\t-l <question_id>"
+        "Usage: answer [args...]\n"
+        "\t-a\tcreates an answer\t-a <question_id> <statement> [--correct]\n"
+        "\t-l\tlist answers for a question\t-l <question_id>\n"
         "\t-d\tdeletes a question\t-d <id>" },
     { "interactive", interactive, "Open an interactive session" },
     { NULL, NULL, NULL, NULL } // End of the list
