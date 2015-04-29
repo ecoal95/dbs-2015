@@ -21,11 +21,11 @@ extern struct appcom appcom;
 } while (0)
 
 #define CALL(fn, ...) do { \
-    int argc = 0; \
-    char* argv[] = { __VA_ARGS__, NULL }; \
-    char** argvp = argv; \
-    while ( *argvp++ ) argc++; \
-    fn(argc, argv); \
+    int argc__ = 0; \
+    char* argv__[] = { __VA_ARGS__, NULL }; \
+    char** argvp__ = argv__; \
+    while ( *argvp__++ ) argc__++; \
+    fn(argc__, argv__); \
 } while ( 0 )
 
 #ifdef POSTGRES
@@ -36,7 +36,7 @@ extern struct appcom appcom;
 
 #define ARGUMENT_ERROR() do { \
     fprintf(stderr, "Error: Unexpected number of arguments.\n"); \
-    fprintf(stderr, "Run with `help` to know more"); \
+    fprintf(stderr, "Run with `help` to know more\n"); \
     exit(1); \
 } while (0)
 
