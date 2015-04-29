@@ -20,6 +20,14 @@ extern struct appcom appcom;
     snprintf(appcom.ret.str_value, APPCOM_RET_STR_MAX, "%d", val); \
 } while (0)
 
+#define CALL(fn, ...) do { \
+    int argc = 0; \
+    char* argv[] = { __VA_ARGS__, NULL }; \
+    char** argvp = argv; \
+    while ( *argvp++ ) argc++; \
+    fn(argc, argv); \
+} while ( 0 )
+
 #ifdef POSTGRES
 #  define NOT_FOUND ECPG_NOT_FOUND
 #else

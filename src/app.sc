@@ -4,6 +4,7 @@
 #include <string.h>
 #include "question.h"
 #include "answer.h"
+#include "exam.h"
 #include "interactive.h"
 #include "common.h"
 
@@ -60,6 +61,9 @@ struct command commands[] = {
         "\t-a\tcreates an answer\t-a <question_id> <statement> [--correct]\n"
         "\t-l\tlist answers for a question\t-l <question_id>\n"
         "\t-d\tdeletes a question\t-d <id>" },
+    { "exam", exam, "manages exams",
+        "Usage: answer [args...]\n"
+        "\t-l\tlist exams for a question\t-l <question_id>\n" },
     { "interactive", interactive, "Open an interactive session" },
     { NULL, NULL, NULL, NULL } // End of the list
 };
