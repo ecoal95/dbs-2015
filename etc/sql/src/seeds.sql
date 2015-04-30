@@ -34,7 +34,7 @@ INSERT INTO themes VALUES(0005, 1, 'Planificación del procesador', 'Mecanismos 
 
 
 
---Table "questions" -- OLD ASKS
+--Table "questions"
 INSERT INTO questions VALUES(0001, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de ordenación QuickSort?');
 INSERT INTO questions VALUES(0002, 'Indica cuál de los siguientes TAD sigue un esquema LIFO (Last In, First Out):');
 INSERT INTO questions VALUES(0003, '¿Qué es un AFD?');
