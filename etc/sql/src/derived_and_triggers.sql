@@ -20,3 +20,13 @@ BEGIN
 	UPDATE questions SET exam_count = exam_count + 1 WHERE id = :new.question_id;
 END;
 /
+
+
+--View 'themes_counter'
+CREATE OR REPLACE VIEW themes_counter
+AS SELECT teacher_id, s.subject_id, count (question_id) as total_number, theme_id, t.subject_id, id
+FROM subjects_teachers s, questions_themes, themes t
+WHERE teacher_id=USER and theme_id=id and t.subject_id=s.subject_id;
+GRANT all privileges
+ON themes_counter
+to public;
