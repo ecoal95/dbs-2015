@@ -26,7 +26,6 @@ INSERT INTO subjects VALUES(00050, '00073U', 'Sistemas Operativos', 0005);
 
 
 --Table "themes"
---Priority could be '1', '2' or '3'... in priority's descending order
 INSERT INTO themes VALUES(0001, 1, 'Algoritmos de búsqueda y ordenación', 'Búsqueda de un elemento específico dentro de un conjunto cualquiera de datos, y ordenación del mismo.', 00010);
 INSERT INTO themes VALUES(0002, 1, 'Tipos Abstractos de Datos (TAD)', 'Herramienta fundamental de la programación que generaliza un operador y encapsula un programa.', 00020);
 INSERT INTO themes VALUES(0003, 1, 'Autómatas Finitos', 'Modelo computacional que realiza cómputos en forma automática sobre una entrada para producir una salida.', 00030);
@@ -45,7 +44,6 @@ INSERT INTO questions VALUES(0005, '¿En qué consiste la planificación del pro
 
 
 --Table "answers"
---Priority could be '1', '2' or '3'... in priority's descending order
 INSERT INTO answers VALUES(000100, 'A) nlog(n)', 1, 1, 0001);
 INSERT INTO answers VALUES(000101, 'B) n^2', 0, 2, 0001);
 INSERT INTO answers VALUES(000102, 'C) n', 0, 3, 0001);
@@ -82,7 +80,7 @@ INSERT INTO exams VALUES(0005, 2015, 2, 00050);
 
 
 
---Table "questions_themes" -- OLD ASKS_THEMES
+--Table "questions_themes"
 INSERT INTO questions_themes VALUES(0001, 0001);
 INSERT INTO questions_themes VALUES(0002, 0002);
 INSERT INTO questions_themes VALUES(0003, 0003);
@@ -91,7 +89,7 @@ INSERT INTO questions_themes VALUES(0005, 0005);
 
 
 
---Table "exams_questions" -- OLD ASKS_EXAMS
+--Table "exams_questions"
 INSERT INTO exams_questions VALUES(0001, 0001);
 INSERT INTO exams_questions VALUES(0002, 0002);
 INSERT INTO exams_questions VALUES(0003, 0003);
