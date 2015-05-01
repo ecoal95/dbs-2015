@@ -5,6 +5,7 @@
 #include "exam.h"
 
 int list_questions(int, char**);
+int show_question(int argc, char** argv);
 
 /// Manages questions
 int question(int argc, char** argv) {
