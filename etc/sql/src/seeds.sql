@@ -76,51 +76,100 @@ INSERT INTO answers VALUES(000103, 'D) n^3', 0, 4, 0001);
 -------------------------------------------------------------------------------------------------------------
 --Second question
 INSERT INTO answers VALUES(000104, '', , 1, 0002);
-INSERT INTO answers VALUES(000105, '', , 1, 0002);
-INSERT INTO answers VALUES(000106, '', , 1, 0002);
-INSERT INTO answers VALUES(000107, '', , 1, 0002);
+INSERT INTO answers VALUES(000105, '', , 2, 0002);
+INSERT INTO answers VALUES(000106, '', , 3, 0002);
+INSERT INTO answers VALUES(000107, '', , 4, 0002);
 -------------------------------------------------------------------------------------------------------------
 --Third question
-INSERT INTO answers VALUES(000108, '', , 1, 0002);
-INSERT INTO answers VALUES(000109, '', , 1, 0002);
-INSERT INTO answers VALUES(000110, '', , 1, 0002);
-INSERT INTO answers VALUES(000111, '', , 1, 0002);
+INSERT INTO answers VALUES(000108, '', , 1, 0003);
+INSERT INTO answers VALUES(000109, '', , 2, 0003);
+INSERT INTO answers VALUES(000110, '', , 3, 0003);
+INSERT INTO answers VALUES(000111, '', , 4, 0003);
 -------------------------------------------------------------------------------------------------------------
 --Fourth question
-INSERT INTO answers VALUES(000112, '', , 1, 0002);
-INSERT INTO answers VALUES(000113, '', , 1, 0002);
-INSERT INTO answers VALUES(000114, '', , 1, 0002);
-INSERT INTO answers VALUES(000115, '', , 1, 0002);
+INSERT INTO answers VALUES(000112, '', , 1, 0004);
+INSERT INTO answers VALUES(000113, '', , 2, 0004);
+INSERT INTO answers VALUES(000114, '', , 3, 0004);
+INSERT INTO answers VALUES(000115, '', , 4, 0004);
 -------------------------------------------------------------------------------------------------------------
---Fiveth question
-INSERT INTO answers VALUES(000116, '', , 1, 0002);
-INSERT INTO answers VALUES(000117, '', , 1, 0002);
-INSERT INTO answers VALUES(000118, '', , 1, 0002);
-INSERT INTO answers VALUES(000119, '', , 1, 0002);
+--Fifth question
+INSERT INTO answers VALUES(000116, '', , 1, 0005);
+INSERT INTO answers VALUES(000117, '', , 2, 0005);
+INSERT INTO answers VALUES(000118, '', , 3, 0005);
+INSERT INTO answers VALUES(000119, '', , 4, 0005);
 -------------------------------------------------------------------------------------------------------------
 --Sixth question
-INSERT INTO answers VALUES(000200, 'A) Colas', 0, 1, 0002);
-INSERT INTO answers VALUES(000201, 'B) Pilas', 1, 2, 0002);
-INSERT INTO answers VALUES(000202, 'C) Grafos', 0, 3, 0002);
-INSERT INTO answers VALUES(000203, 'D) Conjuntos Disjuntos', 0, 4, 0002);
+INSERT INTO answers VALUES(000200, 'A) Colas', 0, 1, 0006);
+INSERT INTO answers VALUES(000201, 'B) Pilas', 1, 2, 0006);
+INSERT INTO answers VALUES(000202, 'C) Grafos', 0, 3, 0006);
+INSERT INTO answers VALUES(000203, 'D) Conjuntos Disjuntos', 0, 4, 0006);
+-------------------------------------------------------------------------------------------------------------
+--Seventh question
+INSERT INTO answers VALUES(000204, '', , 1, 0007);
+INSERT INTO answers VALUES(000205, '', , 2, 0007);
+INSERT INTO answers VALUES(000205, '', , 3, 0007);
+INSERT INTO answers VALUES(000206, '', , 4, 0007);
+-------------------------------------------------------------------------------------------------------------
+--Eigth question
+INSERT INTO answers VALUES(000207, '', , 1, 0008);
+INSERT INTO answers VALUES(000208, '', , 2, 0008);
+INSERT INTO answers VALUES(000209, '', , 3, 0008);
+INSERT INTO answers VALUES(000210, '', , 4, 0008);
+-------------------------------------------------------------------------------------------------------------
+--Ninth question
+INSERT INTO answers VALUES(000211, '', , 1, 0009);
+INSERT INTO answers VALUES(000212, '', , 2, 0009);
+INSERT INTO answers VALUES(000213, '', , 3, 0009);
+INSERT INTO answers VALUES(000214, '', , 4, 0009);
+-------------------------------------------------------------------------------------------------------------
+--Tenth question
+INSERT INTO answers VALUES(000215, '', , 1, 0010);
+INSERT INTO answers VALUES(000216, '', , 2, 0010);
+INSERT INTO answers VALUES(000217, '', , 3, 0010);
+INSERT INTO answers VALUES(000218, '', , 4, 0010);
 -------------------------------------------------------------------------------------------------------------
 --Eleventh question
-INSERT INTO answers VALUES(000300, 'A) Autómata Finito No Determinsita', 0, 1, 0003);
-INSERT INTO answers VALUES(000301, 'B) Máquina de Turing', 0, 2, 0003);
-INSERT INTO answers VALUES(000302, 'C) Autómata Finito Determinista', 1, 3, 0003);
-INSERT INTO answers VALUES(000303, 'D) Conjunto Universal', 0, 4, 0003);
+INSERT INTO answers VALUES(000300, 'A) Autómata Finito No Determinsita', 0, 1, 0011);
+INSERT INTO answers VALUES(000301, 'B) Máquina de Turing', 0, 2, 0011);
+INSERT INTO answers VALUES(000302, 'C) Autómata Finito Determinista', 1, 3, 0011);
+INSERT INTO answers VALUES(000303, 'D) Conjunto Universal', 0, 4, 0011);
+-------------------------------------------------------------------------------------------------------------
+--Twelfth question
+-------------------------------------------------------------------------------------------------------------
+--Thirteenth question
+-------------------------------------------------------------------------------------------------------------
+--Fourteenth question
+-------------------------------------------------------------------------------------------------------------
+--Fifteenth question
 -------------------------------------------------------------------------------------------------------------
 --Sixteenth question
-INSERT INTO answers VALUES(000400, 'A) Debe de maximizar beneficios minimizando costes', 1, 1, 0004);
-INSERT INTO answers VALUES(000401, 'B) Debe de minimizar beneficios maximizando costes', 0, 2, 0004);
-INSERT INTO answers VALUES(000402, 'C) Debe de maximizar beneficios maximizando costes', 0, 3, 0004);
-INSERT INTO answers VALUES(000403, 'D) Debe de minimizar beneficios minimizando costes', 0, 4, 0004);
+INSERT INTO answers VALUES(000400, 'A) Debe de maximizar beneficios minimizando costes', 1, 1, 0016);
+INSERT INTO answers VALUES(000401, 'B) Debe de minimizar beneficios maximizando costes', 0, 2, 0016);
+INSERT INTO answers VALUES(000402, 'C) Debe de maximizar beneficios maximizando costes', 0, 3, 0016);
+INSERT INTO answers VALUES(000403, 'D) Debe de minimizar beneficios minimizando costes', 0, 4, 0016);
+-------------------------------------------------------------------------------------------------------------
+--Seventeenth question
+-------------------------------------------------------------------------------------------------------------
+--Eighteenth question
+-------------------------------------------------------------------------------------------------------------
+--Nineteenth question
 -------------------------------------------------------------------------------------------------------------
 --Twentieth question
-INSERT INTO answers VALUES(000500, 'A) Formatear los datos contenidos en un Disco Duro', 0, 1, 0005);
-INSERT INTO answers VALUES(000501, 'B) Varias personas utilizando un mismo Sistema a la vez', 0, 2, 0005);
-INSERT INTO answers VALUES(000502, 'C) Gestión de los mecanismos IPC del Sistema Operativo', 0, 3, 0005);
-INSERT INTO answers VALUES(000503, 'D) Dar un buen servicio a los procesos de un Sistema', 1, 4, 0005);
+-------------------------------------------------------------------------------------------------------------
+--Twenty first question
+INSERT INTO answers VALUES(000500, 'A) Formatear los datos contenidos en un Disco Duro', 0, 1, 0021);
+INSERT INTO answers VALUES(000501, 'B) Varias personas utilizando un mismo Sistema a la vez', 0, 2, 0021);
+INSERT INTO answers VALUES(000502, 'C) Gestión de los mecanismos IPC del Sistema Operativo', 0, 3, 0021);
+INSERT INTO answers VALUES(000503, 'D) Dar un buen servicio a los procesos de un Sistema', 1, 4, 0021);
+-------------------------------------------------------------------------------------------------------------
+--Twenty second question
+-------------------------------------------------------------------------------------------------------------
+--Twenty third question
+-------------------------------------------------------------------------------------------------------------
+--Twenty fourth question
+-------------------------------------------------------------------------------------------------------------
+--Twenty fivth question
+-------------------------------------------------------------------------------------------------------------
 
 
 
