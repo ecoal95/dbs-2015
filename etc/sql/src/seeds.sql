@@ -289,12 +289,31 @@ INSERT INTO questions_themes VALUES(0025, 00025);
 
 
 --Table "exams_questions"
-INSERT INTO exams_questions VALUES(0001, 0001);
-INSERT INTO exams_questions VALUES(0002, 0002);
-INSERT INTO exams_questions VALUES(0003, 0003);
-INSERT INTO exams_questions VALUES(0004, 0004);
-INSERT INTO exams_questions VALUES(0005, 0005);
-
+INSERT INTO exams_questions VALUES(0001, 0001, , , );
+INSERT INTO exams_questions VALUES(0002, 0002, , , );
+INSERT INTO exams_questions VALUES(0003, 0003, , , );
+INSERT INTO exams_questions VALUES(0004, 0004, , , );
+INSERT INTO exams_questions VALUES(0005, 0001, , , );
+INSERT INTO exams_questions VALUES(0006, 0002, , , );
+INSERT INTO exams_questions VALUES(0007, 0003, , , );
+INSERT INTO exams_questions VALUES(0008, 0004, , , );
+INSERT INTO exams_questions VALUES(0009, 0005, , , );
+INSERT INTO exams_questions VALUES(0010, 0001, , , );
+INSERT INTO exams_questions VALUES(0011, 0002, , , );
+INSERT INTO exams_questions VALUES(0012, 0003, , , );
+INSERT INTO exams_questions VALUES(0013, 0004, , , );
+INSERT INTO exams_questions VALUES(0014, 0005, , , );
+INSERT INTO exams_questions VALUES(0015, 0001, , , );
+INSERT INTO exams_questions VALUES(0016, 0002, , , );
+INSERT INTO exams_questions VALUES(0017, 0003, , , );
+INSERT INTO exams_questions VALUES(0018, 0004, , , );
+INSERT INTO exams_questions VALUES(0019, 0005, , , );
+INSERT INTO exams_questions VALUES(0020, 0001, , , );
+INSERT INTO exams_questions VALUES(0021, 0002, , , );
+INSERT INTO exams_questions VALUES(0022, 0003, , , );
+INSERT INTO exams_questions VALUES(0023, 0004, , , );
+INSERT INTO exams_questions VALUES(0024, 0005, , , );
+INSERT INTO exams_questions VALUES(0025, 0001, , , );
 
 
 --Table "subjects_teachers"
