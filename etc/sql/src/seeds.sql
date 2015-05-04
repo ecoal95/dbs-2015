@@ -26,11 +26,44 @@ INSERT INTO subjects VALUES(00050, '00073U', 'Sistemas Operativos', 0005);
 
 
 --Table "themes"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--First subject
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--First theme
 INSERT INTO themes VALUES(0001, 1, 'Algoritmos de búsqueda y ordenación', 'Búsqueda de un elemento específico dentro de un conjunto cualquiera de datos, y ordenación del mismo.', 00010);
-INSERT INTO themes VALUES(0002, 1, 'Tipos Abstractos de Datos (TAD)', 'Herramienta fundamental de la programación que generaliza un operador y encapsula un programa.', 00020);
-INSERT INTO themes VALUES(0003, 1, 'Autómatas Finitos', 'Modelo computacional que realiza cómputos en forma automática sobre una entrada para producir una salida.', 00030);
-INSERT INTO themes VALUES(0004, 1, 'Análisis de costo-beneficio', 'Es una lógica o razonamiento basado en el principio de obtener los mayores y mejores resultados al menor esfuerzo invertido.', 00040);
-INSERT INTO themes VALUES(0005, 1, 'Planificación del procesador', 'Mecanismos más comunes que poseen los sistemas operativos actuales para realizar la gestión del procesador.', 00050);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO themes VALUES(0002, 1, '', '', 00010);
+INSERT INTO themes VALUES(0003, 1, '', '', 00010);
+INSERT INTO themes VALUES(0004, 1, '', '', 00010);
+INSERT INTO themes VALUES(0005, 1, '', '', 00010);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Second subject
+INSERT INTO themes VALUES(0006, 1, 'Tipos Abstractos de Datos (TAD)', 'Herramienta fundamental de la programación que generaliza un operador y encapsula un programa.', 00020);
+INSERT INTO themes VALUES(0007, 1, '', '', 00020);
+INSERT INTO themes VALUES(0008, 1, '', '', 00020);
+INSERT INTO themes VALUES(0009, 1, '', '', 00020);
+INSERT INTO themes VALUES(0010, 1, '', '', 00020);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Third subject
+INSERT INTO themes VALUES(0011, 1, 'Autómatas Finitos', 'Modelo computacional que realiza cómputos en forma automática sobre una entrada para producir una salida.', 00030);
+INSERT INTO themes VALUES(0012, 1, '', '', 00030);
+INSERT INTO themes VALUES(0013, 1, '', '', 00030);
+INSERT INTO themes VALUES(0014, 1, '', '', 00030);
+INSERT INTO themes VALUES(0015, 1, '', '', 00030);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Fourth subject
+INSERT INTO themes VALUES(0016, 1, 'Análisis de costo-beneficio', 'Es una lógica o razonamiento basado en el principio de obtener los mayores y mejores resultados al menor esfuerzo invertido.', 00040);
+INSERT INTO themes VALUES(0017, 1, '', '', 00040);
+INSERT INTO themes VALUES(0018, 1, '', '', 00040);
+INSERT INTO themes VALUES(0019, 1, '', '', 00040);
+INSERT INTO themes VALUES(0020, 1, '', '', 00040);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Fivth subject
+INSERT INTO themes VALUES(0021, 1, 'Planificación del procesador', 'Mecanismos más comunes que poseen los sistemas operativos actuales para realizar la gestión del procesador.', 00050);
+INSERT INTO themes VALUES(0022, 1, '', '', 00050);
+INSERT INTO themes VALUES(0023, 1, '', '', 00050);
+INSERT INTO themes VALUES(0024, 1, '', '', 00050);
+INSERT INTO themes VALUES(0025, 1, '', '', 00050);
 
 
 
