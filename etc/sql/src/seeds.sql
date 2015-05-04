@@ -36,34 +36,87 @@ INSERT INTO themes VALUES(0005, 1, 'Planificación del procesador', 'Mecanismos 
 
 --Table "questions"
 INSERT INTO questions VALUES(0001, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de ordenación QuickSort?');
-INSERT INTO questions VALUES(0002, 'Indica cuál de los siguientes TAD sigue un esquema LIFO (Last In, First Out):');
-INSERT INTO questions VALUES(0003, '¿Qué es un AFD?');
-INSERT INTO questions VALUES(0004, 'Señala cuál de las siguientes afirmaciones sobre las empresas es correcta:');
-INSERT INTO questions VALUES(0005, '¿En qué consiste la planificación del procesador?');
+INSERT INTO questions VALUES(0002, '');
+INSERT INTO questions VALUES(0003, '');
+INSERT INTO questions VALUES(0004, '');
+INSERT INTO questions VALUES(0005, '');
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO questions VALUES(0006, 'Indica cuál de los siguientes TAD sigue un esquema LIFO (Last In, First Out):');
+INSERT INTO questions VALUES(0007, '');
+INSERT INTO questions VALUES(0008, '');
+INSERT INTO questions VALUES(0009, '');
+INSERT INTO questions VALUES(0010, '');
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO questions VALUES(0011, '¿Qué es un AFD?');
+INSERT INTO questions VALUES(0012, '');
+INSERT INTO questions VALUES(0013, '');
+INSERT INTO questions VALUES(0014, '');
+INSERT INTO questions VALUES(0015, '');
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO questions VALUES(0016, 'Señala cuál de las siguientes afirmaciones sobre las empresas es correcta:');
+INSERT INTO questions VALUES(0017, '');
+INSERT INTO questions VALUES(0018, '');
+INSERT INTO questions VALUES(0019, '');
+INSERT INTO questions VALUES(0020, '');
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO questions VALUES(0021, '¿En qué consiste la planificación del procesador?');
+INSERT INTO questions VALUES(0022, '');
+INSERT INTO questions VALUES(0023, '');
+INSERT INTO questions VALUES(0024, '');
+INSERT INTO questions VALUES(0025, '');
 
 
 
 --Table "answers"
+--First question
 INSERT INTO answers VALUES(000100, 'A) nlog(n)', 1, 1, 0001);
 INSERT INTO answers VALUES(000101, 'B) n^2', 0, 2, 0001);
 INSERT INTO answers VALUES(000102, 'C) n', 0, 3, 0001);
 INSERT INTO answers VALUES(000103, 'D) n^3', 0, 4, 0001);
 -------------------------------------------------------------------------------------------------------------
+--Second question
+INSERT INTO answers VALUES(000104, '', , 1, 0002);
+INSERT INTO answers VALUES(000105, '', , 1, 0002);
+INSERT INTO answers VALUES(000106, '', , 1, 0002);
+INSERT INTO answers VALUES(000107, '', , 1, 0002);
+-------------------------------------------------------------------------------------------------------------
+--Third question
+INSERT INTO answers VALUES(000108, '', , 1, 0002);
+INSERT INTO answers VALUES(000109, '', , 1, 0002);
+INSERT INTO answers VALUES(000110, '', , 1, 0002);
+INSERT INTO answers VALUES(000111, '', , 1, 0002);
+-------------------------------------------------------------------------------------------------------------
+--Fourth question
+INSERT INTO answers VALUES(000112, '', , 1, 0002);
+INSERT INTO answers VALUES(000113, '', , 1, 0002);
+INSERT INTO answers VALUES(000114, '', , 1, 0002);
+INSERT INTO answers VALUES(000115, '', , 1, 0002);
+-------------------------------------------------------------------------------------------------------------
+--Fiveth question
+INSERT INTO answers VALUES(000116, '', , 1, 0002);
+INSERT INTO answers VALUES(000117, '', , 1, 0002);
+INSERT INTO answers VALUES(000118, '', , 1, 0002);
+INSERT INTO answers VALUES(000119, '', , 1, 0002);
+-------------------------------------------------------------------------------------------------------------
+--Sixth question
 INSERT INTO answers VALUES(000200, 'A) Colas', 0, 1, 0002);
 INSERT INTO answers VALUES(000201, 'B) Pilas', 1, 2, 0002);
 INSERT INTO answers VALUES(000202, 'C) Grafos', 0, 3, 0002);
 INSERT INTO answers VALUES(000203, 'D) Conjuntos Disjuntos', 0, 4, 0002);
 -------------------------------------------------------------------------------------------------------------
+--Eleventh question
 INSERT INTO answers VALUES(000300, 'A) Autómata Finito No Determinsita', 0, 1, 0003);
 INSERT INTO answers VALUES(000301, 'B) Máquina de Turing', 0, 2, 0003);
 INSERT INTO answers VALUES(000302, 'C) Autómata Finito Determinista', 1, 3, 0003);
 INSERT INTO answers VALUES(000303, 'D) Conjunto Universal', 0, 4, 0003);
 -------------------------------------------------------------------------------------------------------------
+--Sixteenth question
 INSERT INTO answers VALUES(000400, 'A) Debe de maximizar beneficios minimizando costes', 1, 1, 0004);
 INSERT INTO answers VALUES(000401, 'B) Debe de minimizar beneficios maximizando costes', 0, 2, 0004);
 INSERT INTO answers VALUES(000402, 'C) Debe de maximizar beneficios maximizando costes', 0, 3, 0004);
 INSERT INTO answers VALUES(000403, 'D) Debe de minimizar beneficios minimizando costes', 0, 4, 0004);
 -------------------------------------------------------------------------------------------------------------
+--Twentieth question
 INSERT INTO answers VALUES(000500, 'A) Formatear los datos contenidos en un Disco Duro', 0, 1, 0005);
 INSERT INTO answers VALUES(000501, 'B) Varias personas utilizando un mismo Sistema a la vez', 0, 2, 0005);
 INSERT INTO answers VALUES(000502, 'C) Gestión de los mecanismos IPC del Sistema Operativo', 0, 3, 0005);
