@@ -265,6 +265,26 @@ INSERT INTO questions_themes VALUES(0002, 0002);
 INSERT INTO questions_themes VALUES(0003, 0003);
 INSERT INTO questions_themes VALUES(0004, 0004);
 INSERT INTO questions_themes VALUES(0005, 0005);
+INSERT INTO questions_themes VALUES(0006, 0006);
+INSERT INTO questions_themes VALUES(0007, 0007);
+INSERT INTO questions_themes VALUES(0008, 0008);
+INSERT INTO questions_themes VALUES(0009, 0009);
+INSERT INTO questions_themes VALUES(0010, 00010);
+INSERT INTO questions_themes VALUES(0011, 00011);
+INSERT INTO questions_themes VALUES(0012, 00012);
+INSERT INTO questions_themes VALUES(0013, 00013);
+INSERT INTO questions_themes VALUES(0014, 00014);
+INSERT INTO questions_themes VALUES(0015, 00015);
+INSERT INTO questions_themes VALUES(0016, 00016);
+INSERT INTO questions_themes VALUES(0017, 00017);
+INSERT INTO questions_themes VALUES(0018, 00018);
+INSERT INTO questions_themes VALUES(0019, 00019);
+INSERT INTO questions_themes VALUES(0020, 00020);
+INSERT INTO questions_themes VALUES(0021, 00021);
+INSERT INTO questions_themes VALUES(0022, 00022);
+INSERT INTO questions_themes VALUES(0023, 00023);
+INSERT INTO questions_themes VALUES(0024, 00024);
+INSERT INTO questions_themes VALUES(0025, 00025);
 
 
 
