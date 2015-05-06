@@ -109,28 +109,28 @@ INSERT INTO answers VALUES(000102, 'C) n', 0, 3, 0001);
 INSERT INTO answers VALUES(000103, 'D) n^3', 0, 4, 0001);
 -------------------------------------------------------------------------------------------------------------
 --Second question
-INSERT INTO answers VALUES(000104, '', , 1, 0002);
-INSERT INTO answers VALUES(000105, '', , 2, 0002);
-INSERT INTO answers VALUES(000106, '', , 3, 0002);
-INSERT INTO answers VALUES(000107, '', , 4, 0002);
+INSERT INTO answers VALUES(000104, 'A)', 0, 1, 0002);
+INSERT INTO answers VALUES(000105, 'B)', 1, 2, 0002);
+INSERT INTO answers VALUES(000106, 'C)', 0, 3, 0002);
+INSERT INTO answers VALUES(000107, 'D)', 0, 4, 0002);
 -------------------------------------------------------------------------------------------------------------
 --Third question
-INSERT INTO answers VALUES(000108, '', , 1, 0003);
-INSERT INTO answers VALUES(000109, '', , 2, 0003);
-INSERT INTO answers VALUES(000110, '', , 3, 0003);
-INSERT INTO answers VALUES(000111, '', , 4, 0003);
+INSERT INTO answers VALUES(000108, 'A)', 0, 1, 0003);
+INSERT INTO answers VALUES(000109, 'B)', 0, 2, 0003);
+INSERT INTO answers VALUES(000110, 'C)', 1, 3, 0003);
+INSERT INTO answers VALUES(000111, 'D)', 0, 4, 0003);
 -------------------------------------------------------------------------------------------------------------
 --Fourth question
-INSERT INTO answers VALUES(000112, '', , 1, 0004);
-INSERT INTO answers VALUES(000113, '', , 2, 0004);
-INSERT INTO answers VALUES(000114, '', , 3, 0004);
-INSERT INTO answers VALUES(000115, '', , 4, 0004);
+INSERT INTO answers VALUES(000112, 'A)', 0, 1, 0004);
+INSERT INTO answers VALUES(000113, 'B)', 0, 2, 0004);
+INSERT INTO answers VALUES(000114, 'C)', 0, 3, 0004);
+INSERT INTO answers VALUES(000115, 'D)', 1, 4, 0004);
 -------------------------------------------------------------------------------------------------------------
 --Fifth question
-INSERT INTO answers VALUES(000116, '', , 1, 0005);
-INSERT INTO answers VALUES(000117, '', , 2, 0005);
-INSERT INTO answers VALUES(000118, '', , 3, 0005);
-INSERT INTO answers VALUES(000119, '', , 4, 0005);
+INSERT INTO answers VALUES(000116, 'A)', 1, 1, 0005);
+INSERT INTO answers VALUES(000117, 'B)', 0, 2, 0005);
+INSERT INTO answers VALUES(000118, 'C)', 0, 3, 0005);
+INSERT INTO answers VALUES(000119, 'D)', 0, 4, 0005);
 -------------------------------------------------------------------------------------------------------------
 --Sixth question
 INSERT INTO answers VALUES(000200, 'A) FIFO', 0, 1, 0006);
@@ -139,28 +139,28 @@ INSERT INTO answers VALUES(000202, 'C) LILO', 0, 3, 0006);
 INSERT INTO answers VALUES(000203, 'D) Ninguna de las anteriores', 0, 4, 0006);
 -------------------------------------------------------------------------------------------------------------
 --Seventh question
-INSERT INTO answers VALUES(000204, '', , 1, 0007);
-INSERT INTO answers VALUES(000205, '', , 2, 0007);
-INSERT INTO answers VALUES(000206, '', , 3, 0007);
-INSERT INTO answers VALUES(000207, '', , 4, 0007);
+INSERT INTO answers VALUES(000204, 'A)', 0, 1, 0007);
+INSERT INTO answers VALUES(000205, 'B)', 0, 2, 0007);
+INSERT INTO answers VALUES(000206, 'C)', 1, 3, 0007);
+INSERT INTO answers VALUES(000207, 'D)', 0, 4, 0007);
 -------------------------------------------------------------------------------------------------------------
 --Eigth question
-INSERT INTO answers VALUES(000208, '', , 1, 0008);
-INSERT INTO answers VALUES(000209, '', , 2, 0008);
-INSERT INTO answers VALUES(000210, '', , 3, 0008);
-INSERT INTO answers VALUES(000211, '', , 4, 0008);
+INSERT INTO answers VALUES(000208, 'A)', 0, 1, 0008);
+INSERT INTO answers VALUES(000209, 'B)', 0, 2, 0008);
+INSERT INTO answers VALUES(000210, 'C)', 0, 3, 0008);
+INSERT INTO answers VALUES(000211, 'D)', 1, 4, 0008);
 -------------------------------------------------------------------------------------------------------------
 --Ninth question
-INSERT INTO answers VALUES(000212, '', , 1, 0009);
-INSERT INTO answers VALUES(000213, '', , 2, 0009);
-INSERT INTO answers VALUES(000214, '', , 3, 0009);
-INSERT INTO answers VALUES(000215, '', , 4, 0009);
+INSERT INTO answers VALUES(000212, 'A)', 1, 1, 0009);
+INSERT INTO answers VALUES(000213, 'B)', 0, 2, 0009);
+INSERT INTO answers VALUES(000214, 'C)', 0, 3, 0009);
+INSERT INTO answers VALUES(000215, 'D)', 0, 4, 0009);
 -------------------------------------------------------------------------------------------------------------
 --Tenth question
-INSERT INTO answers VALUES(000216, '', , 1, 0010);
-INSERT INTO answers VALUES(000217, '', , 2, 0010);
-INSERT INTO answers VALUES(000218, '', , 3, 0010);
-INSERT INTO answers VALUES(000219, '', , 4, 0010);
+INSERT INTO answers VALUES(000216, 'A)', 0, 1, 0010);
+INSERT INTO answers VALUES(000217, 'B)', 1, 2, 0010);
+INSERT INTO answers VALUES(000218, 'C)', 0, 3, 0010);
+INSERT INTO answers VALUES(000219, 'D)', 0, 4, 0010);
 -------------------------------------------------------------------------------------------------------------
 --Eleventh question
 INSERT INTO answers VALUES(000300, 'A) Autómata Finito No Determinsita', 0, 1, 0011);
@@ -169,28 +169,28 @@ INSERT INTO answers VALUES(000302, 'C) Autómata Finito Determinista', 1, 3, 001
 INSERT INTO answers VALUES(000303, 'D) Conjunto Universal', 0, 4, 0011);
 -------------------------------------------------------------------------------------------------------------
 --Twelfth question
-INSERT INTO answers VALUES(000304, '', , 1, 00012);
-INSERT INTO answers VALUES(000305, '', , 2, 00012);
-INSERT INTO answers VALUES(000306, '', , 3, 00012);
-INSERT INTO answers VALUES(000307, '', , 4, 00012);
+INSERT INTO answers VALUES(000304, 'A)', 0, 1, 00012);
+INSERT INTO answers VALUES(000305, 'B)', 0, 2, 00012);
+INSERT INTO answers VALUES(000306, 'C)', 0, 3, 00012);
+INSERT INTO answers VALUES(000307, 'D)', 1, 4, 00012);
 -------------------------------------------------------------------------------------------------------------
 --Thirteenth question
-INSERT INTO answers VALUES(000308, '', , 1, 00013);
-INSERT INTO answers VALUES(000309, '', , 2, 00013);
-INSERT INTO answers VALUES(000310, '', , 3, 00013);
-INSERT INTO answers VALUES(000311, '', , 4, 00013);
+INSERT INTO answers VALUES(000308, 'A)', 1, 1, 00013);
+INSERT INTO answers VALUES(000309, 'B)', 0, 2, 00013);
+INSERT INTO answers VALUES(000310, 'C)', 0, 3, 00013);
+INSERT INTO answers VALUES(000311, 'D)', 0, 4, 00013);
 -------------------------------------------------------------------------------------------------------------
 --Fourteenth question
-INSERT INTO answers VALUES(000312, '', , 1, 00014);
-INSERT INTO answers VALUES(000313, '', , 2, 00014);
-INSERT INTO answers VALUES(000314, '', , 3, 00014);
-INSERT INTO answers VALUES(000315, '', , 4, 00014);
+INSERT INTO answers VALUES(000312, 'A)', 0, 1, 00014);
+INSERT INTO answers VALUES(000313, 'B)', 1, 2, 00014);
+INSERT INTO answers VALUES(000314, 'C)', 0, 3, 00014);
+INSERT INTO answers VALUES(000315, 'D)', 0, 4, 00014);
 -------------------------------------------------------------------------------------------------------------
 --Fifteenth question
-INSERT INTO answers VALUES(000316, '', , 1, 00015);
-INSERT INTO answers VALUES(000317, '', , 2, 00015);
-INSERT INTO answers VALUES(000318, '', , 3, 00015);
-INSERT INTO answers VALUES(000319, '', , 4, 00015);
+INSERT INTO answers VALUES(000316, 'A)', 0, 1, 00015);
+INSERT INTO answers VALUES(000317, 'B)', 0, 2, 00015);
+INSERT INTO answers VALUES(000318, 'C)', 1, 3, 00015);
+INSERT INTO answers VALUES(000319, 'D)', 0, 4, 00015);
 -------------------------------------------------------------------------------------------------------------
 --Sixteenth question
 INSERT INTO answers VALUES(000400, 'A) Debe de maximizar beneficios minimizando costes', 1, 1, 0016);
@@ -199,28 +199,28 @@ INSERT INTO answers VALUES(000402, 'C) Debe de maximizar beneficios maximizando 
 INSERT INTO answers VALUES(000403, 'D) Debe de minimizar beneficios minimizando costes', 0, 4, 0016);
 -------------------------------------------------------------------------------------------------------------
 --Seventeenth question
-INSERT INTO answers VALUES(000404, '', , 1, 00017);
-INSERT INTO answers VALUES(000405, '', , 2, 00017);
-INSERT INTO answers VALUES(000406, '', , 3, 00017);
-INSERT INTO answers VALUES(000407, '', , 4, 00017);
+INSERT INTO answers VALUES(000404, 'A)', 0, 1, 00017);
+INSERT INTO answers VALUES(000405, 'B)', 1, 2, 00017);
+INSERT INTO answers VALUES(000406, 'C)', 0, 3, 00017);
+INSERT INTO answers VALUES(000407, 'D)', 0, 4, 00017);
 -------------------------------------------------------------------------------------------------------------
 --Eighteenth question
-INSERT INTO answers VALUES(000408, '', , 1, 00018);
-INSERT INTO answers VALUES(000409, '', , 2, 00018);
-INSERT INTO answers VALUES(000410, '', , 3, 00018);
-INSERT INTO answers VALUES(000411, '', , 4, 00018);
+INSERT INTO answers VALUES(000408, 'A)', 0, 1, 00018);
+INSERT INTO answers VALUES(000409, 'B)', 0, 2, 00018);
+INSERT INTO answers VALUES(000410, 'C)', 1, 3, 00018);
+INSERT INTO answers VALUES(000411, 'D)', 0, 4, 00018);
 -------------------------------------------------------------------------------------------------------------
 --Nineteenth question
-INSERT INTO answers VALUES(000412, '', , 1, 00019);
-INSERT INTO answers VALUES(000413, '', , 2, 00019);
-INSERT INTO answers VALUES(000414, '', , 3, 00019);
-INSERT INTO answers VALUES(000415, '', , 4, 00019);
+INSERT INTO answers VALUES(000412, 'A)', 0, 1, 00019);
+INSERT INTO answers VALUES(000413, 'B)', 0, 2, 00019);
+INSERT INTO answers VALUES(000414, 'C)', 0, 3, 00019);
+INSERT INTO answers VALUES(000415, 'D)', 1, 4, 00019);
 -------------------------------------------------------------------------------------------------------------
 --Twentieth question
-INSERT INTO answers VALUES(000416, '', , 1, 00020);
-INSERT INTO answers VALUES(000417, '', , 2, 00020);
-INSERT INTO answers VALUES(000418, '', , 3, 00020);
-INSERT INTO answers VALUES(000419, '', , 4, 00020);
+INSERT INTO answers VALUES(000416, 'A)', 1, 1, 00020);
+INSERT INTO answers VALUES(000417, 'B)', 0, 2, 00020);
+INSERT INTO answers VALUES(000418, 'C)', 0, 3, 00020);
+INSERT INTO answers VALUES(000419, 'D)', 0, 4, 00020);
 -------------------------------------------------------------------------------------------------------------
 --Twenty first question
 INSERT INTO answers VALUES(000500, 'A) Formatear los datos contenidos en un Disco Duro', 0, 1, 0021);
@@ -229,29 +229,28 @@ INSERT INTO answers VALUES(000502, 'C) Gestión de los mecanismos IPC del Sistem
 INSERT INTO answers VALUES(000503, 'D) Dar un buen servicio a los procesos de un Sistema', 1, 4, 0021);
 -------------------------------------------------------------------------------------------------------------
 --Twenty second question
-INSERT INTO answers VALUES(000504, '', , 1, 00022);
-INSERT INTO answers VALUES(000505, '', , 2, 00022);
-INSERT INTO answers VALUES(000506, '', , 3, 00022);
-INSERT INTO answers VALUES(000507, '', , 4, 00022);
+INSERT INTO answers VALUES(000504, 'A)', 1, 1, 00022);
+INSERT INTO answers VALUES(000505, 'B)', 0, 2, 00022);
+INSERT INTO answers VALUES(000506, 'C)', 0, 3, 00022);
+INSERT INTO answers VALUES(000507, 'D)', 0, 4, 00022);
 -------------------------------------------------------------------------------------------------------------
 --Twenty third question
-INSERT INTO answers VALUES(000508, '', , 1, 00023);
-INSERT INTO answers VALUES(000509, '', , 2, 00023);
-INSERT INTO answers VALUES(000510, '', , 3, 00023);
-INSERT INTO answers VALUES(000511, '', , 4, 00023);
+INSERT INTO answers VALUES(000508, 'A)', 0, 1, 00023);
+INSERT INTO answers VALUES(000509, 'B)', 1, 2, 00023);
+INSERT INTO answers VALUES(000510, 'C)', 0, 3, 00023);
+INSERT INTO answers VALUES(000511, 'D)', 0, 4, 00023);
 -------------------------------------------------------------------------------------------------------------
 --Twenty fourth question
-INSERT INTO answers VALUES(000512, '', , 1, 00024);
-INSERT INTO answers VALUES(000513, '', , 2, 00024);
-INSERT INTO answers VALUES(000514, '', , 3, 00024);
-INSERT INTO answers VALUES(000515, '', , 4, 00024);
+INSERT INTO answers VALUES(000512, 'A)', 0, 1, 00024);
+INSERT INTO answers VALUES(000513, 'B)', 0, 2, 00024);
+INSERT INTO answers VALUES(000514, 'C)', 1, 3, 00024);
+INSERT INTO answers VALUES(000515, 'D)', 0, 4, 00024);
 -------------------------------------------------------------------------------------------------------------
 --Twenty fivth question
-INSERT INTO answers VALUES(000516, '', , 1, 00025);
-INSERT INTO answers VALUES(000517, '', , 1, 00025);
-INSERT INTO answers VALUES(000518, '', , 1, 00025);
-INSERT INTO answers VALUES(000519, '', , 1, 00025);
--------------------------------------------------------------------------------------------------------------
+INSERT INTO answers VALUES(000516, 'A)', 0, 1, 00025);
+INSERT INTO answers VALUES(000517, 'B)', 0, 2, 00025);
+INSERT INTO answers VALUES(000518, 'C)', 0, 3, 00025);
+INSERT INTO answers VALUES(000519, 'D)', 1, 4, 00025);
 
 
 
