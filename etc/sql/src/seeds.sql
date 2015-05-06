@@ -66,10 +66,10 @@ INSERT INTO themes VALUES(0025, 1, '', '', 00050);
 --Table "questions"
 --First subject
 INSERT INTO questions VALUES(0001, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de ordenación QuickSort?');
-INSERT INTO questions VALUES(0002, '');
-INSERT INTO questions VALUES(0003, '');
-INSERT INTO questions VALUES(0004, '');
-INSERT INTO questions VALUES(0005, '');
+INSERT INTO questions VALUES(0002, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de búsqueda Burbuja');
+INSERT INTO questions VALUES(0003, '¿Qué tres métodos diferentes de notaciones asintóticas hemos estudiado en clase?');
+INSERT INTO questions VALUES(0004, '¿A qué esquema algorítmico pertenece el famoso problema de ajedrez de Las Ocho Reinas?');
+INSERT INTO questions VALUES(0005, '¿Con qué sencilla fórmula matemática se puede analizar un bucle for?');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Second subject
 INSERT INTO questions VALUES(0006, 'Indica cuál de los siguientes TAD sigue un esquema LIFO (Last In, First Out):');
