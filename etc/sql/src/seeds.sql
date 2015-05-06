@@ -26,19 +26,19 @@ INSERT INTO subjects VALUES(00050, '00073U', 'Sistemas Operativos', 0005);
 
 
 --Table "themes"
---First subject
-INSERT INTO themes VALUES(0001, 1, 'Algoritmos de búsqueda y ordenación', 'Búsqueda de un elemento específico dentro de un conjunto cualquiera de datos, y ordenación del mismo.', 00010);
-INSERT INTO themes VALUES(0002, 1, '', '', 00010);
-INSERT INTO themes VALUES(0003, 1, '', '', 00010);
-INSERT INTO themes VALUES(0004, 1, '', '', 00010);
-INSERT INTO themes VALUES(0005, 1, '', '', 00010);
+--First subject 
+INSERT INTO themes VALUES(0001, 1, 'Algoritmos de ordenación', 'Ordenación de un elemento específico dentro de un conjunto cualquiera de datos.', 00010);
+INSERT INTO themes VALUES(0002, 1, 'Algoritmos de búsqueda', 'Búsqueda de un elemento específico dentro de un conjunto cualquiera de datos.', 00010);
+INSERT INTO themes VALUES(0003, 1, 'Notación asintótica', 'Diferentes métodos para expresar el tiempo de ejecución de un algoritmo.', 00010);
+INSERT INTO themes VALUES(0004, 1, 'Esquemas algorítmicos', 'Agrupación de los algoritmos dentro de distintos esquemas conocidos', 00010);
+INSERT INTO themes VALUES(0005, 1, 'Análisis algorítmico', 'Realizar estimaciones teóricas para los recursos que necesita cualquier algoritmo que resuelva un problema computacional dado.', 00010);
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Second subject
-INSERT INTO themes VALUES(0006, 1, 'Tipos Abstractos de Datos (TAD)', 'Herramienta fundamental de la programación que generaliza un operador y encapsula un programa.', 00020);
-INSERT INTO themes VALUES(0007, 1, '', '', 00020);
-INSERT INTO themes VALUES(0008, 1, '', '', 00020);
-INSERT INTO themes VALUES(0009, 1, '', '', 00020);
-INSERT INTO themes VALUES(0010, 1, '', '', 00020);
+INSERT INTO themes VALUES(0006, 1, 'TAD: Pilas', 'Se utilizan generalmente para simplificar ciertas operaciones de programación.', 00020);
+INSERT INTO themes VALUES(0007, 1, 'TAD: Árboles Binarios de búsqueda', 'Ampliación del TAD Árboles Binarios, que nos permiten recuperar una información determinada.', 00020);
+INSERT INTO themes VALUES(0008, 1, 'TAD: Grafos', 'Conjunto de nodos (también llamados vértices) y un conjunto de arcos (aristas) que establecen relaciones entre los nodos.', 00020);
+INSERT INTO themes VALUES(0009, 1, 'TAD: Conjuntos Disjuntos', 'Conjunto basado en la idea de representación de relaciones entre los elementos del conjunto.', 00020);
+INSERT INTO themes VALUES(0010, 1, 'TAD: Montículos Binarios', 'Tipo de implementación de colas de prioridad.', 00020);
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Third subject
 INSERT INTO themes VALUES(0011, 1, 'Autómatas Finitos', 'Modelo computacional que realiza cómputos en forma automática sobre una entrada para producir una salida.', 00030);
@@ -133,10 +133,10 @@ INSERT INTO answers VALUES(000118, '', , 3, 0005);
 INSERT INTO answers VALUES(000119, '', , 4, 0005);
 -------------------------------------------------------------------------------------------------------------
 --Sixth question
-INSERT INTO answers VALUES(000200, 'A) Colas', 0, 1, 0006);
-INSERT INTO answers VALUES(000201, 'B) Pilas', 1, 2, 0006);
-INSERT INTO answers VALUES(000202, 'C) Grafos', 0, 3, 0006);
-INSERT INTO answers VALUES(000203, 'D) Conjuntos Disjuntos', 0, 4, 0006);
+INSERT INTO answers VALUES(000200, 'A) FIFO', 0, 1, 0006);
+INSERT INTO answers VALUES(000201, 'B) LIFO', 1, 2, 0006);
+INSERT INTO answers VALUES(000202, 'C) LILO', 0, 3, 0006);
+INSERT INTO answers VALUES(000203, 'D) Ninguna de las anteriores', 0, 4, 0006);
 -------------------------------------------------------------------------------------------------------------
 --Seventh question
 INSERT INTO answers VALUES(000204, '', , 1, 0007);
