@@ -64,30 +64,35 @@ INSERT INTO themes VALUES(0025, 1, '', '', 00050);
 
 
 --Table "questions"
+--First subject
 INSERT INTO questions VALUES(0001, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de ordenación QuickSort?');
 INSERT INTO questions VALUES(0002, '');
 INSERT INTO questions VALUES(0003, '');
 INSERT INTO questions VALUES(0004, '');
 INSERT INTO questions VALUES(0005, '');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Second subject
 INSERT INTO questions VALUES(0006, 'Indica cuál de los siguientes TAD sigue un esquema LIFO (Last In, First Out):');
 INSERT INTO questions VALUES(0007, '');
 INSERT INTO questions VALUES(0008, '');
 INSERT INTO questions VALUES(0009, '');
 INSERT INTO questions VALUES(0010, '');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Third subject
 INSERT INTO questions VALUES(0011, '¿Qué es un AFD?');
 INSERT INTO questions VALUES(0012, '');
 INSERT INTO questions VALUES(0013, '');
 INSERT INTO questions VALUES(0014, '');
 INSERT INTO questions VALUES(0015, '');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Fourth subject
 INSERT INTO questions VALUES(0016, 'Señala cuál de las siguientes afirmaciones sobre las empresas es correcta:');
 INSERT INTO questions VALUES(0017, '');
 INSERT INTO questions VALUES(0018, '');
 INSERT INTO questions VALUES(0019, '');
 INSERT INTO questions VALUES(0020, '');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Fivth subject
 INSERT INTO questions VALUES(0021, '¿En qué consiste la planificación del procesador?');
 INSERT INTO questions VALUES(0022, '');
 INSERT INTO questions VALUES(0023, '');
@@ -289,31 +294,31 @@ INSERT INTO questions_themes VALUES(0025, 00025);
 
 
 --Table "exams_questions"
-INSERT INTO exams_questions VALUES(0001, 0001, , , );
-INSERT INTO exams_questions VALUES(0002, 0002, , , );
-INSERT INTO exams_questions VALUES(0003, 0003, , , );
-INSERT INTO exams_questions VALUES(0004, 0004, , , );
-INSERT INTO exams_questions VALUES(0005, 0001, , , );
-INSERT INTO exams_questions VALUES(0006, 0002, , , );
-INSERT INTO exams_questions VALUES(0007, 0003, , , );
-INSERT INTO exams_questions VALUES(0008, 0004, , , );
-INSERT INTO exams_questions VALUES(0009, 0005, , , );
-INSERT INTO exams_questions VALUES(0010, 0001, , , );
-INSERT INTO exams_questions VALUES(0011, 0002, , , );
-INSERT INTO exams_questions VALUES(0012, 0003, , , );
-INSERT INTO exams_questions VALUES(0013, 0004, , , );
-INSERT INTO exams_questions VALUES(0014, 0005, , , );
-INSERT INTO exams_questions VALUES(0015, 0001, , , );
-INSERT INTO exams_questions VALUES(0016, 0002, , , );
-INSERT INTO exams_questions VALUES(0017, 0003, , , );
-INSERT INTO exams_questions VALUES(0018, 0004, , , );
-INSERT INTO exams_questions VALUES(0019, 0005, , , );
-INSERT INTO exams_questions VALUES(0020, 0001, , , );
-INSERT INTO exams_questions VALUES(0021, 0002, , , );
-INSERT INTO exams_questions VALUES(0022, 0003, , , );
-INSERT INTO exams_questions VALUES(0023, 0004, , , );
-INSERT INTO exams_questions VALUES(0024, 0005, , , );
-INSERT INTO exams_questions VALUES(0025, 0001, , , );
+INSERT INTO exams_questions VALUES(0001, 0001, 1, 0, 0);
+INSERT INTO exams_questions VALUES(0002, 0002, 0, 1, 0);
+INSERT INTO exams_questions VALUES(0003, 0003, 0, 0, 1);
+INSERT INTO exams_questions VALUES(0004, 0004, 1, 0, 0);
+INSERT INTO exams_questions VALUES(0005, 0001, 0, 1, 0);
+INSERT INTO exams_questions VALUES(0006, 0002, 0, 0, 1);
+INSERT INTO exams_questions VALUES(0007, 0003, 1, 0, 0);
+INSERT INTO exams_questions VALUES(0008, 0004, 0, 1, 0);
+INSERT INTO exams_questions VALUES(0009, 0005, 0, 0, 1);
+INSERT INTO exams_questions VALUES(0010, 0001, 1, 0, 0);
+INSERT INTO exams_questions VALUES(0011, 0002, 0, 1, 0);
+INSERT INTO exams_questions VALUES(0012, 0003, 0, 0, 1);
+INSERT INTO exams_questions VALUES(0013, 0004, 1, 0, 0);
+INSERT INTO exams_questions VALUES(0014, 0005, 0, 1, 0);
+INSERT INTO exams_questions VALUES(0015, 0001, 0, 0, 1);
+INSERT INTO exams_questions VALUES(0016, 0002, 1, 0, 0);
+INSERT INTO exams_questions VALUES(0017, 0003, 0, 1, 0);
+INSERT INTO exams_questions VALUES(0018, 0004, 0, 0, 1);
+INSERT INTO exams_questions VALUES(0019, 0005, 1, 0, 0);
+INSERT INTO exams_questions VALUES(0020, 0001, 0, 1, 0);
+INSERT INTO exams_questions VALUES(0021, 0002, 0, 0, 1);
+INSERT INTO exams_questions VALUES(0022, 0003, 1, 0, 0);
+INSERT INTO exams_questions VALUES(0023, 0004, 0, 1, 0);
+INSERT INTO exams_questions VALUES(0024, 0005, 0, 0, 1);
+INSERT INTO exams_questions VALUES(0025, 0001, 1, 0, 0);
 
 
 --Table "subjects_teachers"
