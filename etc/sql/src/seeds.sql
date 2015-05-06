@@ -67,7 +67,7 @@ INSERT INTO themes VALUES(0025, 1, '', '', 00050);
 --First subject
 INSERT INTO questions VALUES(0001, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de ordenación QuickSort?');
 INSERT INTO questions VALUES(0002, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de búsqueda Burbuja');
-INSERT INTO questions VALUES(0003, '¿Qué tres métodos diferentes de notaciones asintóticas hemos estudiado en clase?');
+INSERT INTO questions VALUES(0003, '¿Qué métodos diferentes de notaciones asintóticas hemos estudiado en clase?');
 INSERT INTO questions VALUES(0004, '¿A qué esquema algorítmico pertenece el famoso problema de ajedrez de Las Ocho Reinas?');
 INSERT INTO questions VALUES(0005, '¿Con qué sencilla fórmula matemática se puede analizar un bucle for?');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -103,34 +103,34 @@ INSERT INTO questions VALUES(0025, '');
 
 --Table "answers"
 --First question
-INSERT INTO answers VALUES(000100, 'A) nlog(n)', 1, 1, 0001);
+INSERT INTO answers VALUES(000100, 'A) n*log(n)', 1, 1, 0001);
 INSERT INTO answers VALUES(000101, 'B) n^2', 0, 2, 0001);
 INSERT INTO answers VALUES(000102, 'C) n', 0, 3, 0001);
 INSERT INTO answers VALUES(000103, 'D) n^3', 0, 4, 0001);
 -------------------------------------------------------------------------------------------------------------
 --Second question
-INSERT INTO answers VALUES(000104, 'A)', 0, 1, 0002);
-INSERT INTO answers VALUES(000105, 'B)', 1, 2, 0002);
-INSERT INTO answers VALUES(000106, 'C)', 0, 3, 0002);
-INSERT INTO answers VALUES(000107, 'D)', 0, 4, 0002);
+INSERT INTO answers VALUES(000104, 'A) n*log(n)', 0, 1, 0002);
+INSERT INTO answers VALUES(000105, 'B) n^2', 1, 2, 0002);
+INSERT INTO answers VALUES(000106, 'C) n^3', 0, 3, 0002);
+INSERT INTO answers VALUES(000107, 'D) n', 0, 4, 0002);
 -------------------------------------------------------------------------------------------------------------
 --Third question
-INSERT INTO answers VALUES(000108, 'A)', 0, 1, 0003);
-INSERT INTO answers VALUES(000109, 'B)', 0, 2, 0003);
-INSERT INTO answers VALUES(000110, 'C)', 1, 3, 0003);
-INSERT INTO answers VALUES(000111, 'D)', 0, 4, 0003);
+INSERT INTO answers VALUES(000108, 'A) El orden de y theta', 0, 1, 0003);
+INSERT INTO answers VALUES(000109, 'B) El orden de y omega', 0, 2, 0003);
+INSERT INTO answers VALUES(000110, 'C) El orden de, omega y theta', 1, 3, 0003);
+INSERT INTO answers VALUES(000111, 'D) Ninguna de las anteriores', 0, 4, 0003);
 -------------------------------------------------------------------------------------------------------------
 --Fourth question
-INSERT INTO answers VALUES(000112, 'A)', 0, 1, 0004);
-INSERT INTO answers VALUES(000113, 'B)', 0, 2, 0004);
-INSERT INTO answers VALUES(000114, 'C)', 0, 3, 0004);
-INSERT INTO answers VALUES(000115, 'D)', 1, 4, 0004);
+INSERT INTO answers VALUES(000112, 'A) Esquema Voraz', 0, 1, 0004);
+INSERT INTO answers VALUES(000113, 'B) Divide y vencerás', 0, 2, 0004);
+INSERT INTO answers VALUES(000114, 'C) Las tres restantes no son ciertas', 0, 3, 0004);
+INSERT INTO answers VALUES(000115, 'D) Backtracking', 1, 4, 0004);
 -------------------------------------------------------------------------------------------------------------
 --Fifth question
-INSERT INTO answers VALUES(000116, 'A)', 1, 1, 0005);
-INSERT INTO answers VALUES(000117, 'B)', 0, 2, 0005);
-INSERT INTO answers VALUES(000118, 'C)', 0, 3, 0005);
-INSERT INTO answers VALUES(000119, 'D)', 0, 4, 0005);
+INSERT INTO answers VALUES(000116, 'A) Serie aritmética', 1, 1, 0005);
+INSERT INTO answers VALUES(000117, 'B) Serie geométrica', 0, 2, 0005);
+INSERT INTO answers VALUES(000118, 'C) Integrales', 0, 3, 0005);
+INSERT INTO answers VALUES(000119, 'D) Derivadas', 0, 4, 0005);
 -------------------------------------------------------------------------------------------------------------
 --Sixth question
 INSERT INTO answers VALUES(000200, 'A) FIFO', 0, 1, 0006);
