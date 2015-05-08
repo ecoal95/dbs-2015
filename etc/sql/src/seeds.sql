@@ -170,9 +170,9 @@ INSERT INTO answers VALUES(000303, 'D) Conjunto Universal', 0, 4, 0011);
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Twelfth question
 INSERT INTO answers VALUES(000304, 'A) Ninguna de las siguientes', 0, 1, 00012);
-INSERT INTO answers VALUES(000305, 'B) Forma de representar  información basada en un conjunto finito de sólo símbolos', 0, 2, 00012);
-INSERT INTO answers VALUES(000306, 'C) Forma de representar  información basada en un conjunto infinito de signos o símbolos', 0, 3, 00012);
-INSERT INTO answers VALUES(000307, 'D) Forma de representar  información basada en un conjunto finito de signos o símbolos', 1, 4, 00012);
+INSERT INTO answers VALUES(000305, 'B) Forma de representar información basada en un conjunto finito de sólo símbolos', 0, 2, 00012);
+INSERT INTO answers VALUES(000306, 'C) Forma de representar información basada en un conjunto infinito de signos o símbolos', 0, 3, 00012);
+INSERT INTO answers VALUES(000307, 'D) Forma de representar información basada en un conjunto finito de signos o símbolos', 1, 4, 00012);
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Thirteenth question
 INSERT INTO answers VALUES(000308, 'A) Lenguaje descrito mediante un formalismo matemático', 1, 1, 00013);
