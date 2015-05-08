@@ -32,28 +32,28 @@ INSERT INTO themes VALUES(0002, 1, 'Algoritmos de búsqueda', 'Búsqueda de un e
 INSERT INTO themes VALUES(0003, 1, 'Notación asintótica', 'Diferentes métodos para expresar el tiempo de ejecución de un algoritmo.', 00010);
 INSERT INTO themes VALUES(0004, 1, 'Esquemas algorítmicos', 'Agrupación de los algoritmos dentro de distintos esquemas conocidos', 00010);
 INSERT INTO themes VALUES(0005, 1, 'Análisis algorítmico', 'Realizar estimaciones teóricas para los recursos que necesita cualquier algoritmo que resuelva un problema computacional dado.', 00010);
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Second subject
 INSERT INTO themes VALUES(0006, 1, 'TAD: Pilas', 'Se utilizan generalmente para simplificar ciertas operaciones de programación.', 00020);
 INSERT INTO themes VALUES(0007, 1, 'TAD: Árboles Binarios de búsqueda', 'Ampliación del TAD Árboles Binarios, que nos permiten recuperar una información determinada.', 00020);
 INSERT INTO themes VALUES(0008, 1, 'TAD: Grafos', 'Conjunto de nodos (también llamados vértices) y un conjunto de arcos (aristas) que establecen relaciones entre los nodos.', 00020);
 INSERT INTO themes VALUES(0009, 1, 'TAD: Conjuntos Disjuntos', 'Conjunto basado en la idea de representación de relaciones entre los elementos del conjunto.', 00020);
 INSERT INTO themes VALUES(0010, 1, 'TAD: Montículos Binarios', 'Tipo de implementación de colas de prioridad.', 00020);
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Third subject
-INSERT INTO themes VALUES(0011, 1, 'Autómatas Finitos', 'Modelo computacional que realiza cómputos en forma automática sobre una entrada para producir una salida.', 00030);
-INSERT INTO themes VALUES(0012, 1, '', '', 00030);
-INSERT INTO themes VALUES(0013, 1, '', '', 00030);
-INSERT INTO themes VALUES(0014, 1, '', '', 00030);
-INSERT INTO themes VALUES(0015, 1, '', '', 00030);
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO themes VALUES(0011, 1, 'Autómatas Finitos', 'Modelos computacionales que realiza cómputos en forma automática sobre una entrada para producir una salida.', 00030);
+INSERT INTO themes VALUES(0012, 1, 'Lenguajes', 'Lo referente a símbolos primitivos y reglas para unir esos símbolos que están formalmente especificados.', 00030);
+INSERT INTO themes VALUES(0013, 1, 'Gramáticas formales', 'Estructuras matemáticas con un conjunto de reglas de formación que definen las cadenas de caracteres admisibles en un determinado lenguaje formal o lengua natural.', 00030);
+INSERT INTO themes VALUES(0014, 1, 'Máquinas abstractas', 'Modelos teóricos de un sistema computador de hardware o software usado en la teoría de autómatas.', 00030);
+INSERT INTO themes VALUES(0015, 1, 'Máquina de Turing', 'Dispositivo que manipula símbolos sobre una tira de cinta de acuerdo a una tabla de reglas.', 00030);
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fourth subject
 INSERT INTO themes VALUES(0016, 1, 'Análisis de costo-beneficio', 'Es una lógica o razonamiento basado en el principio de obtener los mayores y mejores resultados al menor esfuerzo invertido.', 00040);
 INSERT INTO themes VALUES(0017, 1, '', '', 00040);
 INSERT INTO themes VALUES(0018, 1, '', '', 00040);
 INSERT INTO themes VALUES(0019, 1, '', '', 00040);
 INSERT INTO themes VALUES(0020, 1, '', '', 00040);
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fivth subject
 INSERT INTO themes VALUES(0021, 1, 'Planificación del procesador', 'Mecanismos más comunes que poseen los sistemas operativos actuales para realizar la gestión del procesador.', 00050);
 INSERT INTO themes VALUES(0022, 1, '', '', 00050);
