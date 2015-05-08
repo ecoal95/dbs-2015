@@ -94,10 +94,10 @@ INSERT INTO questions VALUES(0020, '¿Cuál es el objetivo único de la inversi�
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fivth subject
 INSERT INTO questions VALUES(0021, '¿En qué consiste la planificación del procesador?');
-INSERT INTO questions VALUES(0022, '');
-INSERT INTO questions VALUES(0023, '');
-INSERT INTO questions VALUES(0024, '');
-INSERT INTO questions VALUES(0025, '');
+INSERT INTO questions VALUES(0022, '¿Cuáles son las funciones de un Sistema Operativo?');
+INSERT INTO questions VALUES(0023, '¿Qué es un proceso?');
+INSERT INTO questions VALUES(0024, '¿Qué problemas puede ocasionar la multiprogramación?');
+INSERT INTO questions VALUES(0025, '¿En qué consiste la paginación bajo demanda?');
 
 
 
@@ -229,28 +229,28 @@ INSERT INTO answers VALUES(000502, 'C) Gestión de los mecanismos IPC del Sistem
 INSERT INTO answers VALUES(000503, 'D) Dar un buen servicio a los procesos de un Sistema', 1, 4, 0021);
 -------------------------------------------------------------------------------------------------------------
 --Twenty second question
-INSERT INTO answers VALUES(000504, 'A)', 1, 1, 00022);
-INSERT INTO answers VALUES(000505, 'B)', 0, 2, 00022);
-INSERT INTO answers VALUES(000506, 'C)', 0, 3, 00022);
-INSERT INTO answers VALUES(000507, 'D)', 0, 4, 00022);
+INSERT INTO answers VALUES(000504, 'A) Todas las restantes', 1, 1, 00022);
+INSERT INTO answers VALUES(000505, 'B) Abstracción del hardware', 0, 2, 00022);
+INSERT INTO answers VALUES(000506, 'C) Detección de errores así como su posible solución', 0, 3, 00022);
+INSERT INTO answers VALUES(000507, 'D) Puesta en ejecución de programas', 0, 4, 00022);
 -------------------------------------------------------------------------------------------------------------
 --Twenty third question
-INSERT INTO answers VALUES(000508, 'A)', 0, 1, 00023);
-INSERT INTO answers VALUES(000509, 'B)', 1, 2, 00023);
-INSERT INTO answers VALUES(000510, 'C)', 0, 3, 00023);
-INSERT INTO answers VALUES(000511, 'D)', 0, 4, 00023);
+INSERT INTO answers VALUES(000508, 'A) Algo no inherente al Sistema Operativo', 0, 1, 00023);
+INSERT INTO answers VALUES(000509, 'B) Una instancia de ejecución de un programa', 1, 2, 00023);
+INSERT INTO answers VALUES(000510, 'C) Un componente del Disco Duro', 0, 3, 00023);
+INSERT INTO answers VALUES(000511, 'D) Todas las anteriores son respuestas válidas', 0, 4, 00023);
 -------------------------------------------------------------------------------------------------------------
 --Twenty fourth question
-INSERT INTO answers VALUES(000512, 'A)', 0, 1, 00024);
-INSERT INTO answers VALUES(000513, 'B)', 0, 2, 00024);
-INSERT INTO answers VALUES(000514, 'C)', 1, 3, 00024);
-INSERT INTO answers VALUES(000515, 'D)', 0, 4, 00024);
+INSERT INTO answers VALUES(000512, 'A) Compartición de código y/o datos', 0, 1, 00024);
+INSERT INTO answers VALUES(000513, 'B) Reubicación del código', 0, 2, 00024);
+INSERT INTO answers VALUES(000514, 'C) Todas las demás', 1, 3, 00024);
+INSERT INTO answers VALUES(000515, 'D) Protección de la memoria de cada proceso', 0, 4, 00024);
 -------------------------------------------------------------------------------------------------------------
 --Twenty fivth question
-INSERT INTO answers VALUES(000516, 'A)', 0, 1, 00025);
-INSERT INTO answers VALUES(000517, 'B)', 0, 2, 00025);
-INSERT INTO answers VALUES(000518, 'C)', 0, 3, 00025);
-INSERT INTO answers VALUES(000519, 'D)', 1, 4, 00025);
+INSERT INTO answers VALUES(000516, 'A) En dividir el programa en páginas/marcos y cargar en memoria secundaria todos', 0, 1, 00025);
+INSERT INTO answers VALUES(000517, 'B) En dividir el programa en páginas/marcos y cargar en memoria secundaria sólo los que se estén usando', 0, 2, 00025);
+INSERT INTO answers VALUES(000518, 'C) En dividir el programa en páginas/marcos y cargar en memoria principal todos', 0, 3, 00025);
+INSERT INTO answers VALUES(000519, 'D) En dividir el programa en páginas/marcos y cargar en memoria principal sólo los que se estén usando', 1, 4, 00025);
 
 
 
