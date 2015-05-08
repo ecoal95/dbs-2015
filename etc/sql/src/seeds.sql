@@ -72,17 +72,17 @@ INSERT INTO questions VALUES(0004, '¿A qué esquema algorítmico pertenece el f
 INSERT INTO questions VALUES(0005, '¿Con qué sencilla fórmula matemática se puede analizar un bucle for?');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Second subject
-INSERT INTO questions VALUES(0006, 'Indica cuál de los siguientes TAD sigue un esquema LIFO (Last In, First Out):');
-INSERT INTO questions VALUES(0007, '');
-INSERT INTO questions VALUES(0008, '');
-INSERT INTO questions VALUES(0009, '');
-INSERT INTO questions VALUES(0010, '');
+INSERT INTO questions VALUES(0006, 'Indica de qué tipo de esquema son estos tipos:');
+INSERT INTO questions VALUES(0007, '¿En qué se diferencia este TAD de los Árboles Binarios normales?');
+INSERT INTO questions VALUES(0008, '¿Qué es un Árbol de Expansión mínima?');
+INSERT INTO questions VALUES(0009, '¿Mediante qué tipo de estructuras se pueden implementar un Conjunto Disjunto?');
+INSERT INTO questions VALUES(0010, '¿Qué dos propiedades rigen cualquier Montículo Binario?');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Third subject
 INSERT INTO questions VALUES(0011, '¿Qué es un AFD?');
-INSERT INTO questions VALUES(0012, '');
-INSERT INTO questions VALUES(0013, '');
-INSERT INTO questions VALUES(0014, '');
+INSERT INTO questions VALUES(0012, '¿Qué es un lenguaje?');
+INSERT INTO questions VALUES(0013, '¿Qué es una gramática formal?');
+INSERT INTO questions VALUES(0014, '¿Para qué son usadas las máquinas abstractas?');
 INSERT INTO questions VALUES(0015, '');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fourth subject
@@ -169,22 +169,22 @@ INSERT INTO answers VALUES(000302, 'C) Autómata Finito Determinista', 1, 3, 001
 INSERT INTO answers VALUES(000303, 'D) Conjunto Universal', 0, 4, 0011);
 -------------------------------------------------------------------------------------------------------------
 --Twelfth question
-INSERT INTO answers VALUES(000304, 'A)', 0, 1, 00012);
-INSERT INTO answers VALUES(000305, 'B)', 0, 2, 00012);
-INSERT INTO answers VALUES(000306, 'C)', 0, 3, 00012);
-INSERT INTO answers VALUES(000307, 'D)', 1, 4, 00012);
+INSERT INTO answers VALUES(000304, 'A) Ninguna de las siguientes', 0, 1, 00012);
+INSERT INTO answers VALUES(000305, 'B) Forma de representar  información basada en un conjunto finito de sólo símbolos', 0, 2, 00012);
+INSERT INTO answers VALUES(000306, 'C) Forma de representar  información basada en un conjunto infinito de signos o símbolos', 0, 3, 00012);
+INSERT INTO answers VALUES(000307, 'D) Forma de representar  información basada en un conjunto finito de signos o símbolos', 1, 4, 00012);
 -------------------------------------------------------------------------------------------------------------
 --Thirteenth question
-INSERT INTO answers VALUES(000308, 'A)', 1, 1, 00013);
-INSERT INTO answers VALUES(000309, 'B)', 0, 2, 00013);
-INSERT INTO answers VALUES(000310, 'C)', 0, 3, 00013);
-INSERT INTO answers VALUES(000311, 'D)', 0, 4, 00013);
+INSERT INTO answers VALUES(000308, 'A) Lenguaje descrito mediante un formalismo matemático', 1, 1, 00013);
+INSERT INTO answers VALUES(000309, 'B) Lenguaje descrito mediante un formalismo físico', 0, 2, 00013);
+INSERT INTO answers VALUES(000310, 'C) Lenguaje abstracto sobre cualquier cosa', 0, 3, 00013);
+INSERT INTO answers VALUES(000311, 'D) Ninguna de las anteriores', 0, 4, 00013);
 -------------------------------------------------------------------------------------------------------------
 --Fourteenth question
-INSERT INTO answers VALUES(000312, 'A)', 0, 1, 00014);
-INSERT INTO answers VALUES(000313, 'B)', 1, 2, 00014);
-INSERT INTO answers VALUES(000314, 'C)', 0, 3, 00014);
-INSERT INTO answers VALUES(000315, 'D)', 0, 4, 00014);
+INSERT INTO answers VALUES(000312, 'A) Para compilar programas escritos en lenguaje de programación', 0, 1, 00014);
+INSERT INTO answers VALUES(000313, 'B) En experimentos de pensamiento', 1, 2, 00014);
+INSERT INTO answers VALUES(000314, 'C) Para poder escribir e-mails', 0, 3, 00014);
+INSERT INTO answers VALUES(000315, 'D) Todas son ciertas', 0, 4, 00014);
 -------------------------------------------------------------------------------------------------------------
 --Fifteenth question
 INSERT INTO answers VALUES(000316, 'A)', 0, 1, 00015);
