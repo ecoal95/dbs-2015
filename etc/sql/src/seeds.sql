@@ -49,17 +49,17 @@ INSERT INTO themes VALUES(0015, 1, 'Máquina de Turing', 'Dispositivo que manipu
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fourth subject
 INSERT INTO themes VALUES(0016, 1, 'Análisis de costo-beneficio', 'Es una lógica o razonamiento basado en el principio de obtener los mayores y mejores resultados al menor esfuerzo invertido.', 00040);
-INSERT INTO themes VALUES(0017, 1, 'La empresa y el sistema económico', '', 00040);
-INSERT INTO themes VALUES(0018, 1, 'La empresa como realidad económica', '', 00040);
-INSERT INTO themes VALUES(0019, 1, 'La empresa como sistema', '', 00040);
-INSERT INTO themes VALUES(0020, 1, 'Inversión y financiación', '', 00040);
+INSERT INTO themes VALUES(0017, 1, 'La empresa y el sistema económico', 'La empresa como estructura de producción, de asignación de recursos económicos, distribución y consumo de bienes y servicios en una economía.', 00040);
+INSERT INTO themes VALUES(0018, 1, 'La empresa como realidad económica', 'Conjunto ordenado de factores destinados a la producción.', 00040);
+INSERT INTO themes VALUES(0019, 1, 'La empresa como sistema', 'Teoría de sistemas aplicada a la empresa. Comportamiento, procesos de control y adaptación al entorno.', 00040);
+INSERT INTO themes VALUES(0020, 1, 'Inversión y financiación', 'La supervivencia de una empresa depende de su acertada planificación en cuanto a su política de inversiones, financiaciones y la continuidad de éstas en el tiempo.', 00040);
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fivth subject
 INSERT INTO themes VALUES(0021, 1, 'Planificación del procesador', 'Mecanismos más comunes que poseen los sistemas operativos actuales para realizar la gestión del procesador.', 00050);
-INSERT INTO themes VALUES(0022, 1, '', '', 00050);
-INSERT INTO themes VALUES(0023, 1, '', '', 00050);
-INSERT INTO themes VALUES(0024, 1, '', '', 00050);
-INSERT INTO themes VALUES(0025, 1, '', '', 00050);
+INSERT INTO themes VALUES(0022, 1, 'Introducción a los Sistemas Operativos', 'Funciones, objetivos, evolución y tipos, así como componentes y estructura de un Sistema Operativo.', 00050);
+INSERT INTO themes VALUES(0023, 1, 'Descripción y control de procesos', 'Estados, implementación y control de los procesos.', 00050);
+INSERT INTO themes VALUES(0024, 1, 'Gestión de la memoria principal', 'Conceptos fundamentales, asignación contigua de memoria, paginación y segmentación.', 00050);
+INSERT INTO themes VALUES(0025, 1, 'Gestón de la memoria virtual', 'Paginación bajo demanda, prepaginación, reemplazo de páginas, gestión del conjunto residente, control de carga y ejemplos de gestión de memoria.', 00050);
 
 
 
