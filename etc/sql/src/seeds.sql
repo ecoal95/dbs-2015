@@ -49,10 +49,10 @@ INSERT INTO themes VALUES(0015, 1, 'Máquina de Turing', 'Dispositivo que manipu
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fourth subject
 INSERT INTO themes VALUES(0016, 1, 'Análisis de costo-beneficio', 'Es una lógica o razonamiento basado en el principio de obtener los mayores y mejores resultados al menor esfuerzo invertido.', 00040);
-INSERT INTO themes VALUES(0017, 1, '', '', 00040);
-INSERT INTO themes VALUES(0018, 1, '', '', 00040);
-INSERT INTO themes VALUES(0019, 1, '', '', 00040);
-INSERT INTO themes VALUES(0020, 1, '', '', 00040);
+INSERT INTO themes VALUES(0017, 1, 'La empresa y el sistema económico', '', 00040);
+INSERT INTO themes VALUES(0018, 1, 'La empresa como realidad económica', '', 00040);
+INSERT INTO themes VALUES(0019, 1, 'La empresa como sistema', '', 00040);
+INSERT INTO themes VALUES(0020, 1, 'Inversión y financiación', '', 00040);
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fivth subject
 INSERT INTO themes VALUES(0021, 1, 'Planificación del procesador', 'Mecanismos más comunes que poseen los sistemas operativos actuales para realizar la gestión del procesador.', 00050);
