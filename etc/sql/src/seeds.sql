@@ -326,3 +326,6 @@ INSERT INTO subjects_teachers VALUES(00020, 0002);
 INSERT INTO subjects_teachers VALUES(00030, 0003);
 INSERT INTO subjects_teachers VALUES(00040, 0004);
 INSERT INTO subjects_teachers VALUES(00050, 0005);
+
+
+
