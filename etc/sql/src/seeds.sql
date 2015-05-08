@@ -72,7 +72,7 @@ INSERT INTO questions VALUES(0004, '¿A qué esquema algorítmico pertenece el f
 INSERT INTO questions VALUES(0005, '¿Con qué sencilla fórmula matemática se puede analizar un bucle for?');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Second subject
-INSERT INTO questions VALUES(0006, 'Indica de qué tipo de esquema son estos tipos:');
+INSERT INTO questions VALUES(0006, 'Indica qué tipo de esquema sigue este TAD:');
 INSERT INTO questions VALUES(0007, '¿En qué se diferencia este TAD de los Árboles Binarios normales?');
 INSERT INTO questions VALUES(0008, '¿Qué es un Árbol de Expansión mínima?');
 INSERT INTO questions VALUES(0009, '¿Mediante qué tipo de estructuras se pueden implementar un Conjunto Disjunto?');
@@ -107,145 +107,145 @@ INSERT INTO answers VALUES(000100, 'A) n*log(n)', 1, 1, 0001);
 INSERT INTO answers VALUES(000101, 'B) n^2', 0, 2, 0001);
 INSERT INTO answers VALUES(000102, 'C) n', 0, 3, 0001);
 INSERT INTO answers VALUES(000103, 'D) n^3', 0, 4, 0001);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Second question
 INSERT INTO answers VALUES(000104, 'A) n*log(n)', 0, 1, 0002);
 INSERT INTO answers VALUES(000105, 'B) n^2', 1, 2, 0002);
 INSERT INTO answers VALUES(000106, 'C) n^3', 0, 3, 0002);
 INSERT INTO answers VALUES(000107, 'D) n', 0, 4, 0002);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Third question
 INSERT INTO answers VALUES(000108, 'A) El orden de y theta', 0, 1, 0003);
 INSERT INTO answers VALUES(000109, 'B) El orden de y omega', 0, 2, 0003);
 INSERT INTO answers VALUES(000110, 'C) El orden de, omega y theta', 1, 3, 0003);
 INSERT INTO answers VALUES(000111, 'D) Ninguna de las anteriores', 0, 4, 0003);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fourth question
 INSERT INTO answers VALUES(000112, 'A) Esquema Voraz', 0, 1, 0004);
 INSERT INTO answers VALUES(000113, 'B) Divide y vencerás', 0, 2, 0004);
 INSERT INTO answers VALUES(000114, 'C) Las tres restantes no son ciertas', 0, 3, 0004);
 INSERT INTO answers VALUES(000115, 'D) Backtracking', 1, 4, 0004);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fifth question
 INSERT INTO answers VALUES(000116, 'A) Serie aritmética', 1, 1, 0005);
 INSERT INTO answers VALUES(000117, 'B) Serie geométrica', 0, 2, 0005);
 INSERT INTO answers VALUES(000118, 'C) Integrales', 0, 3, 0005);
 INSERT INTO answers VALUES(000119, 'D) Derivadas', 0, 4, 0005);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Sixth question
 INSERT INTO answers VALUES(000200, 'A) FIFO', 0, 1, 0006);
 INSERT INTO answers VALUES(000201, 'B) LIFO', 1, 2, 0006);
 INSERT INTO answers VALUES(000202, 'C) LILO', 0, 3, 0006);
 INSERT INTO answers VALUES(000203, 'D) Ninguna de las anteriores', 0, 4, 0006);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Seventh question
-INSERT INTO answers VALUES(000204, 'A)', 0, 1, 0007);
-INSERT INTO answers VALUES(000205, 'B)', 0, 2, 0007);
-INSERT INTO answers VALUES(000206, 'C)', 1, 3, 0007);
-INSERT INTO answers VALUES(000207, 'D)', 0, 4, 0007);
--------------------------------------------------------------------------------------------------------------
+INSERT INTO answers VALUES(000204, 'A) En nada, son iguales, pero con distinto nombre', 0, 1, 0007);
+INSERT INTO answers VALUES(000205, 'B) Poseen un campo extra con un puntero', 0, 2, 0007);
+INSERT INTO answers VALUES(000206, 'C) Poseen un campo extra que contiene una clave', 1, 3, 0007);
+INSERT INTO answers VALUES(000207, 'D) Todas las anteriores son correctas', 0, 4, 0007);
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Eigth question
-INSERT INTO answers VALUES(000208, 'A)', 0, 1, 0008);
-INSERT INTO answers VALUES(000209, 'B)', 0, 2, 0008);
-INSERT INTO answers VALUES(000210, 'C)', 0, 3, 0008);
-INSERT INTO answers VALUES(000211, 'D)', 1, 4, 0008);
--------------------------------------------------------------------------------------------------------------
+INSERT INTO answers VALUES(000208, 'A) Un tipo de Conjunto Disjunto', 0, 1, 0008);
+INSERT INTO answers VALUES(000209, 'B) Un tipo de Montículo Binario', 0, 2, 0008);
+INSERT INTO answers VALUES(000210, 'C) Un tipo de Árbol Binario', 0, 3, 0008);
+INSERT INTO answers VALUES(000211, 'D) Un grado cuyos vértices están unidos por las aristas de menor coste (de menos peso)', 1, 4, 0008);
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Ninth question
-INSERT INTO answers VALUES(000212, 'A)', 1, 1, 0009);
-INSERT INTO answers VALUES(000213, 'B)', 0, 2, 0009);
-INSERT INTO answers VALUES(000214, 'C)', 0, 3, 0009);
-INSERT INTO answers VALUES(000215, 'D)', 0, 4, 0009);
--------------------------------------------------------------------------------------------------------------
+INSERT INTO answers VALUES(000212, 'A) Listas enlazadas, árboles binarios y matrices', 1, 1, 0009);
+INSERT INTO answers VALUES(000213, 'B) Listas enlazadas y árboles binarios', 0, 2, 0009);
+INSERT INTO answers VALUES(000214, 'C) Únicamente mediantes matrices', 0, 3, 0009);
+INSERT INTO answers VALUES(000215, 'D) listas enlazadas y matrices', 0, 4, 0009);
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Tenth question
-INSERT INTO answers VALUES(000216, 'A)', 0, 1, 0010);
-INSERT INTO answers VALUES(000217, 'B)', 1, 2, 0010);
-INSERT INTO answers VALUES(000218, 'C)', 0, 3, 0010);
-INSERT INTO answers VALUES(000219, 'D)', 0, 4, 0010);
--------------------------------------------------------------------------------------------------------------
+INSERT INTO answers VALUES(000216, 'A) Propiedas de recorrido y orden', 0, 1, 0010);
+INSERT INTO answers VALUES(000217, 'B) Propiedas de estructura y orden', 1, 2, 0010);
+INSERT INTO answers VALUES(000218, 'C) Propiedad de recorrido y estructura', 0, 3, 0010);
+INSERT INTO answers VALUES(000219, 'D) Todas las demás son correctas', 0, 4, 0010);
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Eleventh question
 INSERT INTO answers VALUES(000300, 'A) Autómata Finito No Determinsita', 0, 1, 0011);
 INSERT INTO answers VALUES(000301, 'B) Máquina de Turing', 0, 2, 0011);
 INSERT INTO answers VALUES(000302, 'C) Autómata Finito Determinista', 1, 3, 0011);
 INSERT INTO answers VALUES(000303, 'D) Conjunto Universal', 0, 4, 0011);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Twelfth question
 INSERT INTO answers VALUES(000304, 'A) Ninguna de las siguientes', 0, 1, 00012);
 INSERT INTO answers VALUES(000305, 'B) Forma de representar  información basada en un conjunto finito de sólo símbolos', 0, 2, 00012);
 INSERT INTO answers VALUES(000306, 'C) Forma de representar  información basada en un conjunto infinito de signos o símbolos', 0, 3, 00012);
 INSERT INTO answers VALUES(000307, 'D) Forma de representar  información basada en un conjunto finito de signos o símbolos', 1, 4, 00012);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Thirteenth question
 INSERT INTO answers VALUES(000308, 'A) Lenguaje descrito mediante un formalismo matemático', 1, 1, 00013);
 INSERT INTO answers VALUES(000309, 'B) Lenguaje descrito mediante un formalismo físico', 0, 2, 00013);
 INSERT INTO answers VALUES(000310, 'C) Lenguaje abstracto sobre cualquier cosa', 0, 3, 00013);
 INSERT INTO answers VALUES(000311, 'D) Ninguna de las anteriores', 0, 4, 00013);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fourteenth question
 INSERT INTO answers VALUES(000312, 'A) Para compilar programas escritos en lenguaje de programación', 0, 1, 00014);
 INSERT INTO answers VALUES(000313, 'B) En experimentos de pensamiento', 1, 2, 00014);
 INSERT INTO answers VALUES(000314, 'C) Para poder escribir e-mails', 0, 3, 00014);
 INSERT INTO answers VALUES(000315, 'D) Todas son ciertas', 0, 4, 00014);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fifteenth question
 INSERT INTO answers VALUES(000316, 'A) No puede simular ningún algoritmo. No está diseñada para eso', 0, 1, 00015);
 INSERT INTO answers VALUES(000317, 'B) Puede simular casi cualquier algoritmo', 0, 2, 00015);
 INSERT INTO answers VALUES(000318, 'C) Puede simular cualquier algoritmo', 1, 3, 00015);
 INSERT INTO answers VALUES(000319, 'D) Todas las anteriores son ciertas', 0, 4, 00015);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Sixteenth question
 INSERT INTO answers VALUES(000400, 'A) Debe de maximizar beneficios minimizando costes', 1, 1, 0016);
 INSERT INTO answers VALUES(000401, 'B) Debe de minimizar beneficios maximizando costes', 0, 2, 0016);
 INSERT INTO answers VALUES(000402, 'C) Debe de maximizar beneficios maximizando costes', 0, 3, 0016);
 INSERT INTO answers VALUES(000403, 'D) Debe de minimizar beneficios minimizando costes', 0, 4, 0016);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Seventeenth question
 INSERT INTO answers VALUES(000404, 'A) La empresa no forma parte de la Economía', 0, 1, 00017);
 INSERT INTO answers VALUES(000405, 'B) La empresa está integrada enteramente dentro de la Economía', 1, 2, 00017);
 INSERT INTO answers VALUES(000406, 'C) La empresa está integrada en la Economía únicamente a nivel de producción', 0, 3, 00017);
 INSERT INTO answers VALUES(000407, 'D) Todas son ciertas', 0, 4, 00017);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Eighteenth question
 INSERT INTO answers VALUES(000408, 'A) Generar bienes y servicios', 0, 1, 00018);
 INSERT INTO answers VALUES(000409, 'B) Anticipar producto obtenido', 0, 2, 00018);
 INSERT INTO answers VALUES(000410, 'C) Todas son verdaderas', 1, 3, 00018);
 INSERT INTO answers VALUES(000411, 'D) Asumir riesgos', 0, 4, 00018);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Nineteenth question
 INSERT INTO answers VALUES(000412, 'A) Independencia', 0, 1, 00019);
 INSERT INTO answers VALUES(000413, 'B) Transformación', 0, 2, 00019);
 INSERT INTO answers VALUES(000414, 'C) Entropía', 0, 3, 00019);
 INSERT INTO answers VALUES(000415, 'D) Todas las anterires son correctas', 1, 4, 00019);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Twentieth question
 INSERT INTO answers VALUES(000416, 'A) Determinar todo lo necesario para poner en marcha una empresa', 1, 1, 00020);
 INSERT INTO answers VALUES(000417, 'B) Tener en cuenta las amortizaciones en el plan de viabilidad de una empresa', 0, 2, 00020);
 INSERT INTO answers VALUES(000418, 'C) Calcular los costes de financiación', 0, 3, 00020);
 INSERT INTO answers VALUES(000419, 'D) Todas son válidas', 0, 4, 00020);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Twenty first question
 INSERT INTO answers VALUES(000500, 'A) Formatear los datos contenidos en un Disco Duro', 0, 1, 0021);
 INSERT INTO answers VALUES(000501, 'B) Varias personas utilizando un mismo Sistema a la vez', 0, 2, 0021);
 INSERT INTO answers VALUES(000502, 'C) Gestión de los mecanismos IPC del Sistema Operativo', 0, 3, 0021);
 INSERT INTO answers VALUES(000503, 'D) Dar un buen servicio a los procesos de un Sistema', 1, 4, 0021);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Twenty second question
 INSERT INTO answers VALUES(000504, 'A) Todas las restantes', 1, 1, 00022);
 INSERT INTO answers VALUES(000505, 'B) Abstracción del hardware', 0, 2, 00022);
 INSERT INTO answers VALUES(000506, 'C) Detección de errores así como su posible solución', 0, 3, 00022);
 INSERT INTO answers VALUES(000507, 'D) Puesta en ejecución de programas', 0, 4, 00022);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Twenty third question
 INSERT INTO answers VALUES(000508, 'A) Algo no inherente al Sistema Operativo', 0, 1, 00023);
 INSERT INTO answers VALUES(000509, 'B) Una instancia de ejecución de un programa', 1, 2, 00023);
 INSERT INTO answers VALUES(000510, 'C) Un componente del Disco Duro', 0, 3, 00023);
 INSERT INTO answers VALUES(000511, 'D) Todas las anteriores son respuestas válidas', 0, 4, 00023);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Twenty fourth question
 INSERT INTO answers VALUES(000512, 'A) Compartición de código y/o datos', 0, 1, 00024);
 INSERT INTO answers VALUES(000513, 'B) Reubicación del código', 0, 2, 00024);
 INSERT INTO answers VALUES(000514, 'C) Todas las demás', 1, 3, 00024);
 INSERT INTO answers VALUES(000515, 'D) Protección de la memoria de cada proceso', 0, 4, 00024);
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 --Twenty fivth question
 INSERT INTO answers VALUES(000516, 'A) En dividir el programa en páginas/marcos y cargar en memoria secundaria todos', 0, 1, 00025);
 INSERT INTO answers VALUES(000517, 'B) En dividir el programa en páginas/marcos y cargar en memoria secundaria sólo los que se estén usando', 0, 2, 00025);
