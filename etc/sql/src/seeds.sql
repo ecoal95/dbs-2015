@@ -83,13 +83,13 @@ INSERT INTO questions VALUES(0011, '¿Qué es un AFD?');
 INSERT INTO questions VALUES(0012, '¿Qué es un lenguaje?');
 INSERT INTO questions VALUES(0013, '¿Qué es una gramática formal?');
 INSERT INTO questions VALUES(0014, '¿Para qué son usadas las máquinas abstractas?');
-INSERT INTO questions VALUES(0015, '');
+INSERT INTO questions VALUES(0015, 'Sobre la Máquina de Turing, señala la afirmación correcta:');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fourth subject
 INSERT INTO questions VALUES(0016, 'Señala cuál de las siguientes afirmaciones sobre las empresas es correcta:');
-INSERT INTO questions VALUES(0017, '');
-INSERT INTO questions VALUES(0018, '');
-INSERT INTO questions VALUES(0019, '');
+INSERT INTO questions VALUES(0017, 'Señala la verdadera:');
+INSERT INTO questions VALUES(0018, '¿Cuáles son las funciones de la empresa dentro de una economía de mercado?');
+INSERT INTO questions VALUES(0019, '¿Cuáles son los principios básicos de la Teoría de Sistemas?');
 INSERT INTO questions VALUES(0020, '');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fivth subject
@@ -187,10 +187,10 @@ INSERT INTO answers VALUES(000314, 'C) Para poder escribir e-mails', 0, 3, 00014
 INSERT INTO answers VALUES(000315, 'D) Todas son ciertas', 0, 4, 00014);
 -------------------------------------------------------------------------------------------------------------
 --Fifteenth question
-INSERT INTO answers VALUES(000316, 'A)', 0, 1, 00015);
-INSERT INTO answers VALUES(000317, 'B)', 0, 2, 00015);
-INSERT INTO answers VALUES(000318, 'C)', 1, 3, 00015);
-INSERT INTO answers VALUES(000319, 'D)', 0, 4, 00015);
+INSERT INTO answers VALUES(000316, 'A) No puede simular ningún algoritmo. No está diseñada para eso', 0, 1, 00015);
+INSERT INTO answers VALUES(000317, 'B) Puede simular casi cualquier algoritmo', 0, 2, 00015);
+INSERT INTO answers VALUES(000318, 'C) Puede simular cualquier algoritmo', 1, 3, 00015);
+INSERT INTO answers VALUES(000319, 'D) Todas las anteriores son ciertas', 0, 4, 00015);
 -------------------------------------------------------------------------------------------------------------
 --Sixteenth question
 INSERT INTO answers VALUES(000400, 'A) Debe de maximizar beneficios minimizando costes', 1, 1, 0016);
@@ -199,22 +199,22 @@ INSERT INTO answers VALUES(000402, 'C) Debe de maximizar beneficios maximizando 
 INSERT INTO answers VALUES(000403, 'D) Debe de minimizar beneficios minimizando costes', 0, 4, 0016);
 -------------------------------------------------------------------------------------------------------------
 --Seventeenth question
-INSERT INTO answers VALUES(000404, 'A)', 0, 1, 00017);
-INSERT INTO answers VALUES(000405, 'B)', 1, 2, 00017);
-INSERT INTO answers VALUES(000406, 'C)', 0, 3, 00017);
-INSERT INTO answers VALUES(000407, 'D)', 0, 4, 00017);
+INSERT INTO answers VALUES(000404, 'A) La empresa no forma parte de la Economía', 0, 1, 00017);
+INSERT INTO answers VALUES(000405, 'B) La empresa está integrada enteramente dentro de la Economía', 1, 2, 00017);
+INSERT INTO answers VALUES(000406, 'C) La empresa está integrada en la Economía únicamente a nivel de producción', 0, 3, 00017);
+INSERT INTO answers VALUES(000407, 'D) Todas son ciertas', 0, 4, 00017);
 -------------------------------------------------------------------------------------------------------------
 --Eighteenth question
-INSERT INTO answers VALUES(000408, 'A)', 0, 1, 00018);
-INSERT INTO answers VALUES(000409, 'B)', 0, 2, 00018);
-INSERT INTO answers VALUES(000410, 'C)', 1, 3, 00018);
-INSERT INTO answers VALUES(000411, 'D)', 0, 4, 00018);
+INSERT INTO answers VALUES(000408, 'A) Generar bienes y servicios', 0, 1, 00018);
+INSERT INTO answers VALUES(000409, 'B) Anticipar producto obtenido', 0, 2, 00018);
+INSERT INTO answers VALUES(000410, 'C) Todas son verdaderas', 1, 3, 00018);
+INSERT INTO answers VALUES(000411, 'D) Asumir riesgos', 0, 4, 00018);
 -------------------------------------------------------------------------------------------------------------
 --Nineteenth question
-INSERT INTO answers VALUES(000412, 'A)', 0, 1, 00019);
-INSERT INTO answers VALUES(000413, 'B)', 0, 2, 00019);
-INSERT INTO answers VALUES(000414, 'C)', 0, 3, 00019);
-INSERT INTO answers VALUES(000415, 'D)', 1, 4, 00019);
+INSERT INTO answers VALUES(000412, 'A) Independencia', 0, 1, 00019);
+INSERT INTO answers VALUES(000413, 'B) Transformación', 0, 2, 00019);
+INSERT INTO answers VALUES(000414, 'C) Entropía', 0, 3, 00019);
+INSERT INTO answers VALUES(000415, 'D) Todas las anterires son correctas', 1, 4, 00019);
 -------------------------------------------------------------------------------------------------------------
 --Twentieth question
 INSERT INTO answers VALUES(000416, 'A)', 1, 1, 00020);
