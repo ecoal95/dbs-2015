@@ -328,4 +328,3 @@ INSERT INTO subjects_teachers VALUES(00040, 0004);
 INSERT INTO subjects_teachers VALUES(00050, 0005);
 
 
-
