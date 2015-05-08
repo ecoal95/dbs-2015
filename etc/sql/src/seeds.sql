@@ -90,7 +90,7 @@ INSERT INTO questions VALUES(0016, 'Señala cuál de las siguientes afirmaciones
 INSERT INTO questions VALUES(0017, 'Señala la verdadera:');
 INSERT INTO questions VALUES(0018, '¿Cuáles son las funciones de la empresa dentro de una economía de mercado?');
 INSERT INTO questions VALUES(0019, '¿Cuáles son los principios básicos de la Teoría de Sistemas?');
-INSERT INTO questions VALUES(0020, '');
+INSERT INTO questions VALUES(0020, '¿Cuál es el objetivo único de la inversión?');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fivth subject
 INSERT INTO questions VALUES(0021, '¿En qué consiste la planificación del procesador?');
@@ -217,10 +217,10 @@ INSERT INTO answers VALUES(000414, 'C) Entropía', 0, 3, 00019);
 INSERT INTO answers VALUES(000415, 'D) Todas las anterires son correctas', 1, 4, 00019);
 -------------------------------------------------------------------------------------------------------------
 --Twentieth question
-INSERT INTO answers VALUES(000416, 'A)', 1, 1, 00020);
-INSERT INTO answers VALUES(000417, 'B)', 0, 2, 00020);
-INSERT INTO answers VALUES(000418, 'C)', 0, 3, 00020);
-INSERT INTO answers VALUES(000419, 'D)', 0, 4, 00020);
+INSERT INTO answers VALUES(000416, 'A) Determinar todo lo necesario para poner en marcha una empresa', 1, 1, 00020);
+INSERT INTO answers VALUES(000417, 'B) Tener en cuenta las amortizaciones en el plan de viabilidad de una empresa', 0, 2, 00020);
+INSERT INTO answers VALUES(000418, 'C) Calcular los costes de financiación', 0, 3, 00020);
+INSERT INTO answers VALUES(000419, 'D) Todas son válidas', 0, 4, 00020);
 -------------------------------------------------------------------------------------------------------------
 --Twenty first question
 INSERT INTO answers VALUES(000500, 'A) Formatear los datos contenidos en un Disco Duro', 0, 1, 0021);
