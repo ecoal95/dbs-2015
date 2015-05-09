@@ -1,4 +1,3 @@
-// vim:set syntax=c:
 #include "answer.h"
 #include "common.h"
 
@@ -35,10 +34,10 @@ int answer(int argc, char** argv) {
         COPY_TO_VARCHAR(title, argv[1], 255);
         EXEC SQL INSERT INTO answers (question_id, title, is_correct) VALUES (:question_id, :title, :is_correct)
             RETURNING id INTO :id;
-        // We return the id printing it
+        /* We return the id printing it */
         printf("%d\n", id);
         return 0;
-    // Delete
+    /* Delete */
     } else if ( strcmp(argv[0], "-d") == 0 ) {
         argc--; argv++;
 

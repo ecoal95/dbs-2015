@@ -1,4 +1,3 @@
-// vim: set syntax=c:
 #include "common.h"
 #include "question.h"
 #include "answer.h"
@@ -8,7 +7,6 @@ int list_questions(int, char**);
 int show_question(int argc, char** argv);
 int list_questions_by_theme(int argc, char** argv);
 
-/// Manages questions
 int question(int argc, char** argv) {
     EXEC SQL WHENEVER SQLERROR DO handle_error();
     EXEC SQL BEGIN DECLARE SECTION;
@@ -19,7 +17,7 @@ int question(int argc, char** argv) {
     if ( argc < 1 || argc > 4 )
         ARGUMENT_ERROR();
 
-    /// Add a new question
+    /* Add a new question */
     if ( strcmp(argv[0], "-a") == 0 ) {
         argc--; argv++;
 
@@ -32,10 +30,10 @@ int question(int argc, char** argv) {
 
         APPCOM_RET_INT(id);
 
-        // We return the id printing it
+        /* We return the id printing it */
         printf("%d\n", id);
         return 0;
-    // Delete
+    /* Delete it */
     } else if ( strcmp(argv[0], "-d") == 0 ) {
         argc--; argv++;
 
@@ -46,7 +44,7 @@ int question(int argc, char** argv) {
 
         EXEC SQL DELETE FROM questions WHERE id = :id;
         return 0;
-    // Update
+    /* Update */
     } else if ( strcmp(argv[0], "-e") == 0 ) {
         argc--; argv++;
 
@@ -59,12 +57,12 @@ int question(int argc, char** argv) {
         EXEC SQL UPDATE questions SET statement = :statement WHERE id = :id;
 
         return 0;
-    // List
+    /* List */
     } else if ( strcmp(argv[0], "-l") == 0 ) {
         argc--; argv++;
 
         return list_questions(argc, argv);
-    // List by theme
+    /* List by theme */
     } else if ( strcmp(argv[0], "-t") == 0 ) {
         argc--; argv++;
 

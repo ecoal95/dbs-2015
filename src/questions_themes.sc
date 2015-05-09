@@ -1,4 +1,3 @@
-// vim: set syntax=c:
 #include "questions_themes.h"
 #include "common.h"
 

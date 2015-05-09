@@ -1,4 +1,3 @@
-// vim:set syntax=c:
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -12,7 +11,7 @@
 
 #include <commands.h>
 
-// The list of our supported commands
+/* The list of our supported commands */
 struct command commands[] = {
     { "question",  question, "manages questions",
         "Usage: question [args...]\n"
@@ -34,20 +33,15 @@ struct command commands[] = {
     { "questions_thems", questions_themes, "Relation between questions and themes",
         "\t-a\tads a new relationship\t-a <question_id> <theme_id>\n" },
     { "interactive", interactive, "Open an interactive session" },
-    { NULL, NULL, NULL, NULL } // End of the list
+    { NULL, NULL, NULL, NULL }
 };
 
 
-// TODO: Recover graciously
 void handle_error() {
     fprintf(stderr, "[ERROR] %s | SQLSTATE(%s), SQLCODE(%ld)\n", sqlca.sqlerrm.sqlerrmc, SQLSTATE, SQLCODE);
     exit(1);
 }
 
-
-
-
-/// Comentario de prueba
 int main(int argc, char** argv) {
     EXEC SQL WHENEVER SQLERROR DO handle_error();
     EXEC SQL CONNECT TO exams;

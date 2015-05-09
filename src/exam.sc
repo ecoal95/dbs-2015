@@ -1,4 +1,3 @@
-// vim: set syntax=c:
 #include "exam.h"
 #include "common.h"
 

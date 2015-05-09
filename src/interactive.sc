@@ -1,4 +1,3 @@
-// vim: set syntax=c:
 #include "interactive.h"
 #include "common.h"
 #include "question.h"

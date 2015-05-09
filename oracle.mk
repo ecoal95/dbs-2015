@@ -1,5 +1,4 @@
 all: target/app
-    @echo > /dev/null
 
 include $(ORACLE_HOME)/precomp/lib/env_precomp.mk
 PREPRO = bash oracle-prepro
