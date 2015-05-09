@@ -39,7 +39,7 @@ extern struct appcom appcom;
 #ifdef POSTGRES
 #  define NOT_FOUND ECPG_NOT_FOUND
 #else
-#  define NOT_FOUND SQLE_NOTFOUND
+#  define NOT_FOUND 100
 #endif
 
 #define ARGUMENT_ERROR() do { \
