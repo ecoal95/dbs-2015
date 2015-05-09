@@ -5,9 +5,9 @@ else
 CC := clang
 PREPRO := ecpg
 CLINKFLAGS := -lecpg
-CFLAGS := -I/usr/include/postgresql -DPOSTGRES
+CFLAGS := -I/usr/include/postgresql -std=c99 -DPOSTGRES
 endif
-CFLAGS := $(CFLAGS) -Wall -Ilib
+CFLAGS := $(CFLAGS) -Wall -pedantic -Ilib
 TARGETS := target/app
 SC_FILES := $(wildcard src/**/*.sc) $(wildcard src/*.sc)
 C_PREPROCESSED_FILES := $(SC_FILES:.sc=.c)

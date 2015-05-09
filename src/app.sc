@@ -2,49 +2,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+
 #include "question.h"
 #include "answer.h"
 #include "exam.h"
+#include "questions_themes.h"
 #include "interactive.h"
 #include "common.h"
 
 #include <commands.h>
-
-int create_question(int argc, char** argv) {
-    char buffer[255];
-    char is_correct;
-
-    printf("Give me the statement:");
-    get_str(buffer, sizeof(buffer));
-
-    char* args[] = { "-a", buffer, NULL };
-    question(2, args);
-
-    char* id_str = NULL;
-
-    while ( 1 ) {
-        printf("Give me one answer (empty to stop):");
-        get_str(buffer, sizeof(buffer));
-
-        if ( ! *buffer )
-            break;
-
-        printf("Is correct? (Y/n):");
-        do {
-            is_correct = getchar();
-        } while ( is_correct != 'n' && is_correct != 'Y' );
-
-        if ( is_correct == 'Y' ) {
-            char* args[] = { "-a", id_str, buffer, "--correct", NULL };
-            answer(4, args);
-        } else {
-            char* args[] = { "-a", id_str, buffer, NULL };
-            answer(3, args);
-        }
-    }
-
-    return 1;
-}
 
 // The list of our supported commands
 struct command commands[] = {
@@ -65,6 +31,8 @@ struct command commands[] = {
     { "exam", exam, "manages exams",
         "Usage: answer [args...]\n"
         "\t-l\tlist exams for a question\t-l <question_id>\n" },
+    { "questions_thems", questions_themes, "Relation between questions and themes",
+        "\t-a\tads a new relationship\t-a <question_id> <theme_id>\n" },
     { "interactive", interactive, "Open an interactive session" },
     { NULL, NULL, NULL, NULL } // End of the list
 };
