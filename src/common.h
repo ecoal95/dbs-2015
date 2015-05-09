@@ -3,6 +3,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <sqlca.h>
+
+#ifndef SQLCODE
+#define SQLCODE sqlca.sqlcode
+#endif
 
 #define APPCOM_RET_STR_MAX 70
 struct appcom {
@@ -20,12 +25,7 @@ extern struct appcom appcom;
     snprintf(appcom.ret.str_value, APPCOM_RET_STR_MAX, "%d", val); \
 } while (0)
 
-#if 0
-#define DEBUG(format, ...) \
-    fprintf(stderr, format "\n", ## __VA_ARGS__)
-#else
 #define DEBUG(...)
-#endif
 
 #define CALL(fn, ...) do { \
     int argc__ = 0; \

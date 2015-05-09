@@ -9,7 +9,11 @@
 #include "interactive.h"
 #include "common.h"
 
-#include <commands.h>
+#include "../lib/commands.h"
+
+#ifndef POSTGRES
+char SQLSTATE[5];
+#endif
 
 /* The list of our supported commands */
 struct command commands[] = {
@@ -44,7 +48,14 @@ void handle_error() {
 
 int main(int argc, char** argv) {
     EXEC SQL WHENEVER SQLERROR DO handle_error();
+#ifndef POSTGRES
+    EXEC SQL BEGIN DECLARE SECTION;
+    char oracle_id[] = "/";
+    EXEC SQL END DECLARE SECTION;
+    EXEC SQL CONNECT :oracle_id;
+#else
     EXEC SQL CONNECT TO exams;
+#endif
 
     int ret = command_exec(commands, argc, argv);
 

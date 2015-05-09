@@ -1,2 +1,3 @@
 #!/bin/bash
-proc MODE=ANSI iname=$2
+cd $(dirname $2)
+proc MODE=ANSI iname=$(basename $2)
