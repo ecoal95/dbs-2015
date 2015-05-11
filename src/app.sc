@@ -12,7 +12,8 @@
 #include "../lib/commands.h"
 
 #ifndef POSTGRES
-char SQLSTATE[5];
+char SQLSTATE[6];
+#define SQLCODE sqlca.sqlcode
 #endif
 
 /* The list of our supported commands */

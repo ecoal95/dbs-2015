@@ -100,8 +100,6 @@ int list_questions(int argc, char** argv) {
     else if ( argc == 2 )
         ARGUMENT_ERROR();
 
-    DEBUG("list_questions");
-
     EXEC SQL DECLARE questions_cursor CURSOR FOR
         SELECT id, statement FROM questions;
 

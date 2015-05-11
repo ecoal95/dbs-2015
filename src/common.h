@@ -25,21 +25,10 @@ extern struct appcom appcom;
     snprintf(appcom.ret.str_value, APPCOM_RET_STR_MAX, "%d", val); \
 } while (0)
 
-#define DEBUG(...)
-
-#define CALL(fn, ...) do { \
-    int argc__ = 0; \
-    char* argv__[] = { __VA_ARGS__, NULL }; \
-    char** argvp__ = argv__; \
-    while ( *argvp__++ ) argc__++; \
-    DEBUG("Call %s: argc = %d", #fn, argc__); \
-    fn(argc__, argv__); \
-} while ( 0 )
-
 #ifdef POSTGRES
 #  define NOT_FOUND ECPG_NOT_FOUND
 #else
-#  define NOT_FOUND 100
+#  define NOT_FOUND 1403
 #endif
 
 #define ARGUMENT_ERROR() do { \
@@ -55,4 +44,13 @@ extern struct appcom appcom;
 } while ( 0 )
 
 void get_str(char*, size_t);
+
+/* This must be the last macro to keep PRO*C happy */
+#define CALL(fn, ...) do { \
+    int argc__ = 0; \
+    char* argv__[] = { __VA_ARGS__, NULL }; \
+    char** argvp__ = argv__; \
+    while ( *argvp__++ ) argc__++; \
+    fn(argc__, argv__); \
+} while ( 0 )
 #endif

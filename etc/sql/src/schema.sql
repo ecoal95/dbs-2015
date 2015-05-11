@@ -1,12 +1,12 @@
 CREATE TABLE grades (
-	id INTEGER NOT NULL,
+	id INTEGER,
 	name VARCHAR(255) NOT NULL,
 	PRIMARY KEY(id)
 );
 
 
 CREATE TABLE teachers (
-	id INTEGER NOT NULL,
+	id INTEGER,
 	dni VARCHAR(10) NOT NULL UNIQUE,
 	name VARCHAR(255) NOT NULL,
 	knowledge_field VARCHAR(255) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE teachers (
 
 
 CREATE TABLE subjects (
-	id INTEGER NOT NULL,
+	id INTEGER,
 	code VARCHAR(10) NOT NULL UNIQUE,
 	name VARCHAR(255) NOT NULL,
 	grade_id INTEGER NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE subjects (
 
 
 CREATE TABLE themes (
-	id INTEGER NOT NULL,
+	id INTEGER,
 	priority INTEGER DEFAULT 1,
 	name VARCHAR(255) NOT NULL,
     -- VARCHAR below should be TEXT, but it's not supported in oracle
@@ -37,14 +37,14 @@ CREATE TABLE themes (
 
 
 CREATE TABLE questions (
-	id INTEGER NOT NULL,
+	id INTEGER,
 	statement VARCHAR(255) NOT NULL,
 	PRIMARY KEY (id)
 );
 
 
 CREATE TABLE answers (
-	id INTEGER NOT NULL,
+	id INTEGER,
     title VARCHAR(255) NOT NULL,
     is_correct SMALLINT CHECK (is_correct in (0,1)),
     priority INTEGER DEFAULT 1,
@@ -55,7 +55,7 @@ CREATE TABLE answers (
 
 
 CREATE TABLE exams (
-	id INTEGER NOT NULL,
+	id INTEGER,
     year INTEGER NOT NULL,
     convocatory INTEGER NOT NULL,
     subject_id INTEGER NOT NULL,

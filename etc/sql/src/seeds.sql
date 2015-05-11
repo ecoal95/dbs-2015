@@ -17,87 +17,87 @@ INSERT INTO teachers VALUES(5, '70011497H', 'José de Pedro Santos', 'Nanotecnol
 
 
 --Table "subjects"
-INSERT INTO subjects VALUES(10, '00015A', 'Algoritmia', 1);
-INSERT INTO subjects VALUES(20, '00128E', 'Estructuras de Datos', 2);
-INSERT INTO subjects VALUES(30, '00021I', 'Informática Teórica', 3);
-INSERT INTO subjects VALUES(40, '00052O', 'Organización y gestión de empresas', 4);
-INSERT INTO subjects VALUES(50, '00073U', 'Sistemas Operativos', 5);
+INSERT INTO subjects VALUES(1, '00015A', 'Algoritmia', 1);
+INSERT INTO subjects VALUES(2, '00128E', 'Estructuras de Datos', 2);
+INSERT INTO subjects VALUES(3, '00021I', 'Informática Teórica', 3);
+INSERT INTO subjects VALUES(4, '00052O', 'Organización y gestión de empresas', 4);
+INSERT INTO subjects VALUES(5, '00073U', 'Sistemas Operativos', 5);
 
 
 
 --Table "themes"
 --First subject
-INSERT INTO themes VALUES(1, 1, 'Algoritmos de ordenación', 'Ordenación de un elemento específico dentro de un conjunto cualquiera de datos.', 10);
-INSERT INTO themes VALUES(2, 1, 'Algoritmos de búsqueda', 'Búsqueda de un elemento específico dentro de un conjunto cualquiera de datos.', 10);
-INSERT INTO themes VALUES(3, 1, 'Notación asintótica', 'Diferentes métodos para expresar el tiempo de ejecución de un algoritmo.', 10);
-INSERT INTO themes VALUES(4, 1, 'Esquemas algorítmicos', 'Agrupación de los algoritmos dentro de distintos esquemas conocidos', 10);
-INSERT INTO themes VALUES(5, 1, 'Análisis algorítmico', 'Realizar estimaciones teóricas para los recursos que necesita cualquier algoritmo que resuelva un problema computacional dado.', 10);
+INSERT INTO themes VALUES(1, 1, 'Algoritmos de ordenación', 'Ordenación de un elemento específico dentro de un conjunto cualquiera de datos.', 1);
+INSERT INTO themes VALUES(2, 1, 'Algoritmos de búsqueda', 'Búsqueda de un elemento específico dentro de un conjunto cualquiera de datos.', 1);
+INSERT INTO themes VALUES(3, 1, 'Notación asintótica', 'Diferentes métodos para expresar el tiempo de ejecución de un algoritmo.', 1);
+INSERT INTO themes VALUES(4, 1, 'Esquemas algorítmicos', 'Agrupación de los algoritmos dentro de distintos esquemas conocidos', 1);
+INSERT INTO themes VALUES(5, 1, 'Análisis algorítmico', 'Realizar estimaciones teóricas para los recursos que necesita cualquier algoritmo que resuelva un problema computacional dado.', 1);
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Second subject
-INSERT INTO themes VALUES(6, 1, 'TAD: Pilas', 'Se utilizan generalmente para simplificar ciertas operaciones de programación.', 20);
-INSERT INTO themes VALUES(7, 1, 'TAD: Árboles Binarios de búsqueda', 'Ampliación del TAD Árboles Binarios, que nos permiten recuperar una información determinada.', 20);
-INSERT INTO themes VALUES(8, 1, 'TAD: Grafos', 'Conjunto de nodos (también llamados vértices) y un conjunto de arcos (aristas) que establecen relaciones entre los nodos.', 20);
-INSERT INTO themes VALUES(9, 1, 'TAD: Conjuntos Disjuntos', 'Conjunto basado en la idea de representación de relaciones entre los elementos del conjunto.', 20);
-INSERT INTO themes VALUES(10, 1, 'TAD: Montículos Binarios', 'Tipo de implementación de colas de prioridad.', 20);
+INSERT INTO themes VALUES(6, 1, 'TAD: Pilas', 'Se utilizan generalmente para simplificar ciertas operaciones de programación.', 2);
+INSERT INTO themes VALUES(7, 1, 'TAD: Árboles Binarios de búsqueda', 'Ampliación del TAD Árboles Binarios, que nos permiten recuperar una información determinada.', 2);
+INSERT INTO themes VALUES(8, 1, 'TAD: Grafos', 'Conjunto de nodos (también llamados vértices) y un conjunto de arcos (aristas) que establecen relaciones entre los nodos.', 2);
+INSERT INTO themes VALUES(9, 1, 'TAD: Conjuntos Disjuntos', 'Conjunto basado en la idea de representación de relaciones entre los elementos del conjunto.', 2);
+INSERT INTO themes VALUES(10, 1, 'TAD: Montículos Binarios', 'Tipo de implementación de colas de prioridad.', 2);
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Third subject
-INSERT INTO themes VALUES(11, 1, 'Autómatas Finitos', 'Modelos computacionales que realiza cómputos en forma automática sobre una entrada para producir una salida.', 30);
-INSERT INTO themes VALUES(12, 1, 'Lenguajes', 'Lo referente a símbolos primitivos y reglas para unir esos símbolos que están formalmente especificados.', 30);
-INSERT INTO themes VALUES(13, 1, 'Gramáticas formales', 'Estructuras matemáticas con un conjunto de reglas de formación que definen las cadenas de caracteres admisibles en un determinado lenguaje formal o lengua natural.', 30);
-INSERT INTO themes VALUES(14, 1, 'Máquinas abstractas', 'Modelos teóricos de un sistema computador de hardware o software usado en la teoría de autómatas.', 30);
-INSERT INTO themes VALUES(15, 1, 'Máquina de Turing', 'Dispositivo que manipula símbolos sobre una tira de cinta de acuerdo a una tabla de reglas.', 30);
+INSERT INTO themes VALUES(11, 1, 'Autómatas Finitos', 'Modelos computacionales que realiza cómputos en forma automática sobre una entrada para producir una salida.', 3);
+INSERT INTO themes VALUES(12, 1, 'Lenguajes', 'Lo referente a símbolos primitivos y reglas para unir esos símbolos que están formalmente especificados.', 3);
+INSERT INTO themes VALUES(13, 1, 'Gramáticas formales', 'Estructuras matemáticas con un conjunto de reglas de formación que definen las cadenas de caracteres admisibles en un determinado lenguaje formal o lengua natural.', 3);
+INSERT INTO themes VALUES(14, 1, 'Máquinas abstractas', 'Modelos teóricos de un sistema computador de hardware o software usado en la teoría de autómatas.', 3);
+INSERT INTO themes VALUES(15, 1, 'Máquina de Turing', 'Dispositivo que manipula símbolos sobre una tira de cinta de acuerdo a una tabla de reglas.', 3);
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fourth subject
-INSERT INTO themes VALUES(16, 1, 'Análisis de costo-beneficio', 'Es una lógica o razonamiento basado en el principio de obtener los mayores y mejores resultados al menor esfuerzo invertido.', 40);
-INSERT INTO themes VALUES(17, 1, 'La empresa y el sistema económico', 'La empresa como estructura de producción, de asignación de recursos económicos, distribución y consumo de bienes y servicios en una economía.', 40);
-INSERT INTO themes VALUES(18, 1, 'La empresa como realidad económica', 'Conjunto ordenado de factores destinados a la producción.', 40);
-INSERT INTO themes VALUES(19, 1, 'La empresa como sistema', 'Teoría de sistemas aplicada a la empresa. Comportamiento, procesos de control y adaptación al entorno.', 40);
-INSERT INTO themes VALUES(20, 1, 'Inversión y financiación', 'La supervivencia de una empresa depende de su acertada planificación en cuanto a su política de inversiones, financiaciones y la continuidad de éstas en el tiempo.', 40);
+INSERT INTO themes VALUES(16, 1, 'Análisis de costo-beneficio', 'Es una lógica o razonamiento basado en el principio de obtener los mayores y mejores resultados al menor esfuerzo invertido.', 4);
+INSERT INTO themes VALUES(17, 1, 'La empresa y el sistema económico', 'La empresa como estructura de producción, de asignación de recursos económicos, distribución y consumo de bienes y servicios en una economía.', 4);
+INSERT INTO themes VALUES(18, 1, 'La empresa como realidad económica', 'Conjunto ordenado de factores destinados a la producción.', 4);
+INSERT INTO themes VALUES(19, 1, 'La empresa como sistema', 'Teoría de sistemas aplicada a la empresa. Comportamiento, procesos de control y adaptación al entorno.', 4);
+INSERT INTO themes VALUES(20, 1, 'Inversión y financiación', 'La supervivencia de una empresa depende de su acertada planificación en cuanto a su política de inversiones, financiaciones y la continuidad de éstas en el tiempo.', 4);
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fivth subject
-INSERT INTO themes VALUES(21, 1, 'Planificación del procesador', 'Mecanismos más comunes que poseen los sistemas operativos actuales para realizar la gestión del procesador.', 50);
-INSERT INTO themes VALUES(22, 1, 'Introducción a los Sistemas Operativos', 'Funciones, objetivos, evolución y tipos, así como componentes y estructura de un Sistema Operativo.', 50);
-INSERT INTO themes VALUES(23, 1, 'Descripción y control de procesos', 'Estados, implementación y control de los procesos.', 50);
-INSERT INTO themes VALUES(24, 1, 'Gestión de la memoria principal', 'Conceptos fundamentales, asignación contigua de memoria, paginación y segmentación.', 50);
-INSERT INTO themes VALUES(25, 1, 'Gestón de la memoria virtual', 'Paginación bajo demanda, prepaginación, reemplazo de páginas, gestión del conjunto residente, control de carga y ejemplos de gestión de memoria.', 50);
+INSERT INTO themes VALUES(21, 1, 'Planificación del procesador', 'Mecanismos más comunes que poseen los sistemas operativos actuales para realizar la gestión del procesador.', 5);
+INSERT INTO themes VALUES(22, 1, 'Introducción a los Sistemas Operativos', 'Funciones, objetivos, evolución y tipos, así como componentes y estructura de un Sistema Operativo.', 5);
+INSERT INTO themes VALUES(23, 1, 'Descripción y control de procesos', 'Estados, implementación y control de los procesos.', 5);
+INSERT INTO themes VALUES(24, 1, 'Gestión de la memoria principal', 'Conceptos fundamentales, asignación contigua de memoria, paginación y segmentación.', 5);
+INSERT INTO themes VALUES(25, 1, 'Gestón de la memoria virtual', 'Paginación bajo demanda, prepaginación, reemplazo de páginas, gestión del conjunto residente, control de carga y ejemplos de gestión de memoria.', 5);
 
 
 
 --Table "questions"
 --First subject
-INSERT INTO questions VALUES(1, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de ordenación QuickSort?');
-INSERT INTO questions VALUES(2, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de búsqueda Burbuja');
-INSERT INTO questions VALUES(3, '¿Qué métodos diferentes de notaciones asintóticas hemos estudiado en clase?');
-INSERT INTO questions VALUES(4, '¿A qué esquema algorítmico pertenece el famoso problema de ajedrez de Las Ocho Reinas?');
-INSERT INTO questions VALUES(5, '¿Con qué sencilla fórmula matemática se puede analizar un bucle for?');
+INSERT INTO questions (id, statement) VALUES(1, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de ordenación QuickSort?');
+INSERT INTO questions (id, statement) VALUES(2, '¿Cuál de estas funciones representa una cota superior asintótica para el archiconocido algoritmo de búsqueda Burbuja');
+INSERT INTO questions (id, statement) VALUES(3, '¿Qué métodos diferentes de notaciones asintóticas hemos estudiado en clase?');
+INSERT INTO questions (id, statement) VALUES(4, '¿A qué esquema algorítmico pertenece el famoso problema de ajedrez de Las Ocho Reinas?');
+INSERT INTO questions (id, statement) VALUES(5, '¿Con qué sencilla fórmula matemática se puede analizar un bucle for?');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Second subject
-INSERT INTO questions VALUES(6, 'Indica qué tipo de esquema sigue este TAD:');
-INSERT INTO questions VALUES(7, '¿En qué se diferencia este TAD de los Árboles Binarios normales?');
-INSERT INTO questions VALUES(8, '¿Qué es un Árbol de Expansión mínima?');
-INSERT INTO questions VALUES(9, '¿Mediante qué tipo de estructuras se pueden implementar un Conjunto Disjunto?');
-INSERT INTO questions VALUES(10, '¿Qué dos propiedades rigen cualquier Montículo Binario?');
+INSERT INTO questions (id, statement) VALUES(6, 'Indica qué tipo de esquema sigue este TAD:');
+INSERT INTO questions (id, statement) VALUES(7, '¿En qué se diferencia este TAD de los Árboles Binarios normales?');
+INSERT INTO questions (id, statement) VALUES(8, '¿Qué es un Árbol de Expansión mínima?');
+INSERT INTO questions (id, statement) VALUES(9, '¿Mediante qué tipo de estructuras se pueden implementar un Conjunto Disjunto?');
+INSERT INTO questions (id, statement) VALUES(10, '¿Qué dos propiedades rigen cualquier Montículo Binario?');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Third subject
-INSERT INTO questions VALUES(11, '¿Qué es un AFD?');
-INSERT INTO questions VALUES(12, '¿Qué es un lenguaje?');
-INSERT INTO questions VALUES(13, '¿Qué es una gramática formal?');
-INSERT INTO questions VALUES(14, '¿Para qué son usadas las máquinas abstractas?');
-INSERT INTO questions VALUES(15, 'Sobre la Máquina de Turing, señala la afirmación correcta:');
+INSERT INTO questions (id, statement) VALUES(11, '¿Qué es un AFD?');
+INSERT INTO questions (id, statement) VALUES(12, '¿Qué es un lenguaje?');
+INSERT INTO questions (id, statement) VALUES(13, '¿Qué es una gramática formal?');
+INSERT INTO questions (id, statement) VALUES(14, '¿Para qué son usadas las máquinas abstractas?');
+INSERT INTO questions (id, statement) VALUES(15, 'Sobre la Máquina de Turing, señala la afirmación correcta:');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fourth subject
-INSERT INTO questions VALUES(16, 'Señala cuál de las siguientes afirmaciones sobre las empresas es correcta:');
-INSERT INTO questions VALUES(17, 'Señala la verdadera:');
-INSERT INTO questions VALUES(18, '¿Cuáles son las funciones de la empresa dentro de una economía de mercado?');
-INSERT INTO questions VALUES(19, '¿Cuáles son los principios básicos de la Teoría de Sistemas?');
-INSERT INTO questions VALUES(20, '¿Cuál es el objetivo único de la inversión?');
+INSERT INTO questions (id, statement) VALUES(16, 'Señala cuál de las siguientes afirmaciones sobre las empresas es correcta:');
+INSERT INTO questions (id, statement) VALUES(17, 'Señala la verdadera:');
+INSERT INTO questions (id, statement) VALUES(18, '¿Cuáles son las funciones de la empresa dentro de una economía de mercado?');
+INSERT INTO questions (id, statement) VALUES(19, '¿Cuáles son los principios básicos de la Teoría de Sistemas?');
+INSERT INTO questions (id, statement) VALUES(20, '¿Cuál es el objetivo único de la inversión?');
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Fivth subject
-INSERT INTO questions VALUES(21, '¿En qué consiste la planificación del procesador?');
-INSERT INTO questions VALUES(22, '¿Cuáles son las funciones de un Sistema Operativo?');
-INSERT INTO questions VALUES(23, '¿Qué es un proceso?');
-INSERT INTO questions VALUES(24, '¿Qué problemas puede ocasionar la multiprogramación?');
-INSERT INTO questions VALUES(25, '¿En qué consiste la paginación bajo demanda?');
+INSERT INTO questions (id, statement) VALUES(21, '¿En qué consiste la planificación del procesador?');
+INSERT INTO questions (id, statement) VALUES(22, '¿Cuáles son las funciones de un Sistema Operativo?');
+INSERT INTO questions (id, statement) VALUES(23, '¿Qué es un proceso?');
+INSERT INTO questions (id, statement) VALUES(24, '¿Qué problemas puede ocasionar la multiprogramación?');
+INSERT INTO questions (id, statement) VALUES(25, '¿En qué consiste la paginación bajo demanda?');
 
 
 
@@ -255,11 +255,11 @@ INSERT INTO answers VALUES(519, 'En dividir el programa en páginas/marcos y car
 
 
 --Table "exams"
-INSERT INTO exams VALUES(1, 2007, 1, 10);
-INSERT INTO exams VALUES(2, 2008, 2, 20);
-INSERT INTO exams VALUES(3, 2005, 1, 30);
-INSERT INTO exams VALUES(4, 2010, 1, 40);
-INSERT INTO exams VALUES(5, 2015, 2, 50);
+INSERT INTO exams VALUES(1, 2007, 1, 1);
+INSERT INTO exams VALUES(2, 2008, 2, 2);
+INSERT INTO exams VALUES(3, 2005, 1, 3);
+INSERT INTO exams VALUES(4, 2010, 1, 4);
+INSERT INTO exams VALUES(5, 2015, 2, 5);
 
 
 
@@ -321,8 +321,8 @@ INSERT INTO exams_questions VALUES(25, 1, 1, 0, 0);
 
 
 --Table "subjects_teachers"
-INSERT INTO subjects_teachers VALUES(10, 1);
-INSERT INTO subjects_teachers VALUES(20, 2);
-INSERT INTO subjects_teachers VALUES(30, 3);
-INSERT INTO subjects_teachers VALUES(40, 4);
-INSERT INTO subjects_teachers VALUES(50, 5);
+INSERT INTO subjects_teachers VALUES(1, 1);
+INSERT INTO subjects_teachers VALUES(2, 2);
+INSERT INTO subjects_teachers VALUES(3, 3);
+INSERT INTO subjects_teachers VALUES(4, 4);
+INSERT INTO subjects_teachers VALUES(5, 5);
