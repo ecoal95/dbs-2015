@@ -21,12 +21,3 @@ BEGIN
 END;
 /
 
-
---View 'questions_counter'
-CREATE OR REPLACE VIEW questions_counter
-AS SELECT teacher_id, s.subject_id, count (question_id) as total_number, theme_id, t.subject_id, id
-FROM subjects_teachers s, questions_themes, themes t
-WHERE teacher_id=USER and theme_id=id and t.subject_id=s.subject_id;
-GRANT all privileges
-ON questions_counter
-to public;
