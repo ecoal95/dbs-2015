@@ -1,20 +1,18 @@
 --Table "grades"
-INSERT INTO grades (id, name) VALUES
-    (1, 'Grado en Ingeniería Informática'),
-    (2, 'Ingeniería Técnica en Informática de Gestión')
-    (3, 'Grado en Ingeniería Informática en Sistemas de Información'),
-    (4, 'Ingeniería Técnica en Informática de Sistemas'),
-    (5, 'Grado en Ingeniería del Software');
+INSERT INTO grades VALUES(1, 'Grado en Ingeniería Informática');
+INSERT INTO grades VALUES(2, 'Ingeniería Técnica en Informática de Gestión');
+INSERT INTO grades VALUES(3, 'Grado en Ingeniería Informática en Sistemas de Información');
+INSERT INTO grades VALUES(4, 'Ingeniería Técnica en Informática de Sistemas');
+INSERT INTO grades VALUES(5, 'Grado en Ingeniería del Software');
 
 
 
 --Table "teachers"
-INSERT INTO teachers (id, dni, name, knowledge_field) VALUES
-	(1, '70015789L', 'Jacinto Pérez Hermoso', 'Automática'),
-	(2, '71085749F', 'Brígida Ferreira Santos', 'Robótica'),
-	(3, '78014787Y', 'Tomás Fernández Marín', 'Inteligencia Artifical'),
-	(4, '70032427T', 'Laura Galende Hernández', 'Informática'),
-	(5, '70011497H', 'José de Pedro Santos', 'Nanotecnología');
+INSERT INTO teachers VALUES(1, '70015789L', 'Jacinto Pérez Hermoso', 'Automática');
+INSERT INTO teachers VALUES(2, '71085749F', 'Brígida Ferreira Santos', 'Robótica');
+INSERT INTO teachers VALUES(3, '78014787Y', 'Tomás Fernández Marín', 'Inteligencia Artifical');
+INSERT INTO teachers VALUES(4, '70032427T', 'Laura Galende Hernández', 'Informática');
+INSERT INTO teachers VALUES(5, '70011497H', 'José de Pedro Santos', 'Nanotecnología');
 
 
 
@@ -28,7 +26,7 @@ INSERT INTO subjects VALUES(50, '00073U', 'Sistemas Operativos', 5);
 
 
 --Table "themes"
---First subject 
+--First subject
 INSERT INTO themes VALUES(1, 1, 'Algoritmos de ordenación', 'Ordenación de un elemento específico dentro de un conjunto cualquiera de datos.', 10);
 INSERT INTO themes VALUES(2, 1, 'Algoritmos de búsqueda', 'Búsqueda de un elemento específico dentro de un conjunto cualquiera de datos.', 10);
 INSERT INTO themes VALUES(3, 1, 'Notación asintótica', 'Diferentes métodos para expresar el tiempo de ejecución de un algoritmo.', 10);
@@ -328,5 +326,3 @@ INSERT INTO subjects_teachers VALUES(20, 2);
 INSERT INTO subjects_teachers VALUES(30, 3);
 INSERT INTO subjects_teachers VALUES(40, 4);
 INSERT INTO subjects_teachers VALUES(50, 5);
-
-

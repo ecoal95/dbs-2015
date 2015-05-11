@@ -8,7 +8,7 @@ for table in grades teachers subjects themes asks answers exams; do
 	echo "CREATE TRIGGER ${table}_insert BEFORE INSERT ON $table"
 	echo "FOR EACH ROW"
 	echo "BEGIN"
-	echo "    SELECT $seq_id.NEXTVAL INTO :new.id FROM dual"
+	echo "    SELECT $seq_id.NEXTVAL INTO :new.id FROM dual;"
 	echo "END;"
 	echo "/"
 	echo ""
