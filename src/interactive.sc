@@ -11,7 +11,7 @@ void crear_pregunta() {
     char resp;
     char* question_id = NULL;
     printf("Introduce un enunciado: \n");
-    str_get(buffer, sizeof(buffer));
+    get_str(buffer, sizeof(buffer));
 
     CALL(question, "-a", buffer);
 
@@ -26,7 +26,7 @@ void crear_pregunta() {
             break;
 
         printf("Introduce la respuesta:\n");
-        str_get(buffer, sizeof(buffer));
+        get_str(buffer, sizeof(buffer));
 
         printf("Es una respuesta correcta?\n");
         resp = get_bool();
@@ -60,10 +60,10 @@ void asignar_tema() {
     char theme_id[20];
 
     printf("Introduce la id de la pregunta: ");
-    fgets(question_id, sizeof(question_id), stdin);
+    get_str(question_id, sizeof(question_id));
 
     printf("Introduce la id del tema: ");
-    fgets(theme_id, sizeof(theme_id), stdin);
+    get_str(question_id, sizeof(question_id));
 
     CALL(questions_themes, "-a", question_id, theme_id);
 
@@ -118,9 +118,7 @@ int interactive(int argc, char** argv) {
 
         chosen = 0;
         do {
-            printf("> ");
-            scanf("%d", &chosen);
-            FLUSH_STDIN();
+            chosen = get_int();
         } while ( chosen < 1 || chosen > i );
 
         options[chosen - 1].fn();

@@ -83,7 +83,7 @@ int list_answers(int argc, char** argv) {
         if ( SQLCODE == NOT_FOUND )
             break;
 
-        printf(" [%c] %s (%d)\n", is_correct ? 'x' : ' ', title, id);
+        printf(" [%c] %s (%d)\n", is_correct ? 'x' : ' ', str_trim_right(title), id);
     }
     EXEC SQL CLOSE answers_cursor;
     return 1;

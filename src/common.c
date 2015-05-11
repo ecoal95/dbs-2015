@@ -5,12 +5,10 @@
 
 struct appcom appcom = { { 0, "" } };
 
-void str_get(char* buffer, size_t size) {
+void get_str(char* buffer, size_t size) {
     printf("> ");
     fgets(buffer, size, stdin);
     buffer[size - 1] = '\0';
-
-    FLUSH_STDIN();
 
     str_trim_right(buffer);
 }
@@ -19,8 +17,10 @@ char* str_trim_right(char* input) {
     size_t len = strlen(input);
 
     while ( len-- )
-        if ( isspace(input[len]) )
-            input[len] = '\0';
+        if ( ! isspace(input[len]) )
+            break;
+
+    input[len + 1] = '\0';
 
     return input;
 }
@@ -47,4 +47,14 @@ char get_bool() {
         return 1;
 
     return 0;
+}
+
+int get_int() {
+    int ret;
+    printf("> ");
+    scanf("%d", &ret);
+
+    FLUSH_STDIN();
+
+    return ret;
 }

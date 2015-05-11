@@ -52,7 +52,7 @@ int list_exams(int argc, char** argv) {
 
         ++count;
 
-        printf("%d %s (%d)\n", exam_year, subject_name, convocatory);
+        printf("%d %s (%d)\n", exam_year, str_trim_right(subject_name), convocatory);
         printf(" - Total: %d\n", correct + incorrect + unreplied);
         printf(" - Correct: %d\n", correct);
         printf(" - Incorrect: %d\n", incorrect);

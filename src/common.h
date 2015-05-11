@@ -47,10 +47,12 @@ extern struct appcom appcom;
     vchar.len = strlen(vchar.arr); \
 } while ( 0 )
 
-void str_get(char*, size_t);
 char* str_trim_right(char*);
 char* str_copy(const char*);
+
+void get_str(char*, size_t);
 char get_bool();
+int get_int();
 
 /* This must be the last macro to keep PRO*C happy */
 #define CALL(fn, ...) do { \

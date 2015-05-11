@@ -124,7 +124,7 @@ int list_questions(int argc, char** argv) {
             snprintf(question_id_str, sizeof(question_id_str), "%d", id);
             CALL(question, "-s", question_id_str);
         } else {
-            printf("%d\t%s\n", id, statement);
+            printf("%d\t%s\n", id, str_trim_right(statement));
         }
     }
     if ( argc == 0 || (argc == 1 && detailed_mode) )
@@ -160,7 +160,7 @@ int list_questions_by_theme(int argc, char** argv) {
         if ( SQLCODE == NOT_FOUND )
             break;
 
-        printf("#%d - %d: %s (%s)\n", theme_id, theme_priority, theme_name, subject_name);
+        printf("#%d - %d: %s (%s)\n", theme_id, theme_priority, str_trim_right(theme_name), str_trim_right(subject_name));
 
         snprintf(theme_id_str, sizeof(theme_id_str), "%d", theme_id);
         // argv[argc - 1] is required to be null
@@ -191,7 +191,7 @@ int show_question(int argc, char** argv) {
         return 1;
     }
 
-    printf("%s\n", statement);
+    printf("%s\n", str_trim_right(statement));
     printf("-----------------------------------\n");
     printf("Options:\n");
 
