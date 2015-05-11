@@ -1,3 +1,15 @@
+--DROP TABLE grades;
+--DROP TABLE teachers;
+--DROP TABLE subjects;
+--DROP TABLE themes;
+--DROP TABLE questions;
+--DROP TABLE exams;
+--DROP TABLE answers;
+--DROP TABLE questions_themes;
+--DROP TABLE exams_questions;
+--DROP TABLE subjects_teachers;
+
+
 CREATE TABLE grades (
 	id INTEGER NOT NULL,
 	name VARCHAR(255) NOT NULL,
