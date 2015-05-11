@@ -30,8 +30,6 @@ int question(int argc, char** argv) {
 
         APPCOM_RET_INT(id);
 
-        /* We return the id printing it */
-        printf("%d\n", id);
         return 0;
     /* Delete it */
     } else if ( strcmp(argv[0], "-d") == 0 ) {

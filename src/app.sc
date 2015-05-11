@@ -60,6 +60,9 @@ int main(int argc, char** argv) {
 
     int ret = command_exec(commands, argc, argv);
 
+    if ( appcom.ret.int_value )
+        printf("%d\n", appcom.ret.int_value);
+
     EXEC SQL COMMIT;
 
     return ret;

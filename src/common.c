@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-struct appcom appcom;
+struct appcom appcom = { { 0, "" } };
 
 void str_get(char* buffer, size_t size) {
     printf("> ");

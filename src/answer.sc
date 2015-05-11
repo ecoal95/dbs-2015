@@ -34,8 +34,8 @@ int answer(int argc, char** argv) {
         COPY_TO_VARCHAR(title, argv[1], 255);
         EXEC SQL INSERT INTO answers (question_id, title, is_correct) VALUES (:question_id, :title, :is_correct)
             RETURNING id INTO :id;
-        /* We return the id printing it */
-        printf("%d\n", id);
+
+        APPCOM_RET_INT(id);
         return 0;
     /* Delete */
     } else if ( strcmp(argv[0], "-d") == 0 ) {
