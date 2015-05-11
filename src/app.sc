@@ -35,7 +35,7 @@ struct command commands[] = {
     { "exam", exam, "manages exams",
         "Usage: answer [args...]\n"
         "\t-l\tlist exams for a question\t-l <question_id>\n" },
-    { "questions_thems", questions_themes, "Relation between questions and themes",
+    { "questions_themes", questions_themes, "Relation between questions and themes",
         "\t-a\tads a new relationship\t-a <question_id> <theme_id>\n" },
     { "interactive", interactive, "Open an interactive session" },
     { NULL, NULL, NULL, NULL }
