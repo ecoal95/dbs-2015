@@ -1,6 +1,6 @@
 # Documentación de la práctica
 
-# Estructura del código
+# Estructura del código C
 
 El código C relativo a la funcionalidad está todo en el directorio `src/`. El programa está organizado por subcomandos, declarados todos en el fichero principal `app.sc`:
 
@@ -37,7 +37,7 @@ Cada estructura de la lista contiene el alias del comando (la forma de llamarlo)
 
 Cada función es encargada de leer el resto de argumentos, y hacer lo que crea conveniente con ellos, y está declarada en un fichero `.h` con el mismo nombre, y definida en el fichero `.sc` correspondiente.
 
-Las funciones interaccionan entre ellas usando el macro `CALL` (common.h), que manipula los argumentos convenientemente para simular una llamada desde la consola.
+Las funciones interaccionan entre ellas usando el macro `CALL` (`common.h`), que manipula los argumentos convenientemente para simular una llamada desde la consola.
 
 Así, escribir:
 
@@ -50,6 +50,17 @@ Es equivalente a ejecutar:
 ```
 ./target/app question -l
 ```
+
+# Estructura del código SQL
+
+El código sql se encuentra en la carpeta `etc/sql/`. Bajo el directorio `etc/sql/src/` se encuentran:
+ * `schema.sql`: El esquema de la base de datos.
+ * `derived_and_triggers.sql`: El atributo derivado y los triggers necesarios para gestionarlo automáticamente.
+ * `seeds.sql`: Inserción de valores de prueba de la base de datos.
+ * `view.sql`: La vista requerida por el enunciado.
+ * `oracle-drops.sql`: Drops de las tablas en oracle (en postgresql borramos la base de datos directamente).
+
+**Nota**: El esquema de la bd varía un poco con respecto al propuesto. Cada tema pertenece exclusivamente a una asignatura, y en vez de forzar órdenes, usamos un campo `priority`, que es más flexible. Se puede ver la estructura en el esquema de la carpeta `doc/`
 
 # Compilación y ejecución
 
@@ -64,6 +75,10 @@ $ cd etc/sql && make
 **Nota**: en olivo, `make` debe ser sustituido por `gmake`
 
 El primer `make` compilará la aplicación en el directorio `target/`, mientras que el segundo creará las tablas, el atributo derivado, la vista, e insertará los datos de prueba.
+
+Usamos un pequeño archivo (`oracle-prepro`) para poder compilar con una interfaz similar a la de `gcc` o `ecpg` (compila el archivo pasado como segundo argumento con las opciones deseadas). Usamos la opción `DYNAMIC=ORACLE` ya que con esta configuración el mensaje de error en `sqlca.sqlerrm.sqlerrmc` funciona como se espera.
+
+Los warnings generados por `Pro*C` acerca del macro `CALL` deberán ser ignorados. Se deben a que usa argumentos variables (`C99`), y el preprocesador analiza código según `C90` (*Ya va siendo hora de actualizar... __ejem__*).
 
 ## Ejecución en modo interactivo
 
@@ -94,4 +109,6 @@ No se han hecho entradas interactivas de algunas de ellas para evitar complicar 
 
 Se ha evitado el tener que especificar la id al insertar los datos mediante un uso de triggers y secuencias. Los triggers son autogenerados por el script `etc/sql/scripts/generate_triggers.sh`.
 
-La vista cuenta los temas que no tienen ninguna pregunta asignada, eso se consigue con una subselect
+La vista cuenta los temas que no tienen ninguna pregunta asignada, eso se consigue con una subselect. El rendimiento probablemente sea peor que sin ella, pero tenemos el juego de datos esperado.
+
+
