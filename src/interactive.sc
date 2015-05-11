@@ -49,8 +49,8 @@ void listar_por_tema() {
 void consultar_pregunta() {
     char id[20];
 
-    printf("Introduce el id de la pregunta: ");
-    fgets(id, sizeof(id), stdin);
+    printf("Introduce el id de la pregunta: \n");
+    get_str(id, sizeof(id));
 
     CALL(question, "-s", id);
 }
@@ -59,11 +59,11 @@ void asignar_tema() {
     char question_id[20];
     char theme_id[20];
 
-    printf("Introduce la id de la pregunta: ");
+    printf("Introduce la id de la pregunta: \n");
     get_str(question_id, sizeof(question_id));
 
-    printf("Introduce la id del tema: ");
-    get_str(question_id, sizeof(question_id));
+    printf("Introduce la id del tema: \n");
+    get_str(theme_id, sizeof(theme_id));
 
     CALL(questions_themes, "-a", question_id, theme_id);
 
