@@ -37,13 +37,20 @@ extern struct appcom appcom;
     exit(1); \
 } while (0)
 
+#define FLUSH_STDIN() do { \
+    while ( getchar() != '\n' ) {}; \
+} while ( 0 )
+
 #define COPY_TO_VARCHAR(vchar, str, _len) do { \
     strncpy(vchar.arr, str, _len); \
     vchar.arr[_len - 1] = '\0'; \
     vchar.len = strlen(vchar.arr); \
 } while ( 0 )
 
-void get_str(char*, size_t);
+void str_get(char*, size_t);
+char* str_trim_right(char*);
+char* str_copy(const char*);
+char get_bool();
 
 /* This must be the last macro to keep PRO*C happy */
 #define CALL(fn, ...) do { \

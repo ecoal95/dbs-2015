@@ -1,18 +1,43 @@
 #include "interactive.h"
 #include "common.h"
 #include "question.h"
+#include "answer.h"
 #include "questions_themes.h"
 #include <stdio.h>
 #include <ctype.h>
 
 void crear_pregunta() {
     char buffer[256] = {0};
+    char resp;
+    char* question_id = NULL;
     printf("Introduce un enunciado: \n");
-    get_str(buffer, sizeof(buffer));
+    str_get(buffer, sizeof(buffer));
 
     CALL(question, "-a", buffer);
 
-    printf("Pregunta creada correctamente\n");
+    printf("Pregunta creada correctamente (id: %d)\n", appcom.ret.int_value);
+    question_id = str_copy(appcom.ret.str_value);
+
+    while ( 1 ) {
+        printf("Quieres introducir una respuesta? ");
+        resp = get_bool();
+
+        if ( ! resp )
+            break;
+
+        printf("Introduce la respuesta:\n");
+        str_get(buffer, sizeof(buffer));
+
+        printf("Es una respuesta correcta?\n");
+        resp = get_bool();
+
+        if ( resp )
+            CALL(answer, "-a", question_id, "--correct");
+        else
+            CALL(answer, "-a", question_id);
+    }
+
+    free(question_id);
 }
 
 void listar_por_tema() {
@@ -51,13 +76,10 @@ void commit() {
 void exit_() {
     char resp;
 
-    do {
-        printf("Guardar los cambios? (y/n): ");
-        resp = tolower(getchar());
-        fflush(stdin);
-    } while ( ! (resp == 'y' || resp == 'n') );
+    printf("Guardar los cambios? ");
+    resp = get_bool();
 
-    if ( resp == 'y' )
+    if ( resp )
         commit();
 
     exit(0);
@@ -96,7 +118,7 @@ int interactive(int argc, char** argv) {
         do {
             printf("> ");
             scanf("%d", &chosen);
-            while ( getchar() != '\n' ) {};
+            FLUSH_STDIN();
         } while ( chosen < 1 || chosen > i );
 
         options[chosen - 1].fn();
