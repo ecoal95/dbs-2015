@@ -32,9 +32,11 @@ void crear_pregunta() {
         resp = get_bool();
 
         if ( resp )
-            CALL(answer, "-a", question_id, "--correct");
+            CALL(answer, "-a", question_id, buffer, "--correct");
         else
-            CALL(answer, "-a", question_id);
+            CALL(answer, "-a", question_id, buffer);
+
+        printf("Respuesta creada correctamente (id: %d)\n", appcom.ret.int_value);
     }
 
     free(question_id);
