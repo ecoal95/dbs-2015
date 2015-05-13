@@ -1,4 +1,5 @@
 ALTER TABLE questions ADD exam_count INTEGER DEFAULT 0;
+
 CREATE OR REPLACE TRIGGER question_exam_insert AFTER INSERT ON exams_questions
 FOR EACH ROW
 BEGIN
