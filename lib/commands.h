@@ -4,7 +4,7 @@
  *
  * @license MIT
  *
- * NOTE: It's written in two minutes, don't blame :P
+ *
  */
 #ifndef COMMANDS_H_
 #define COMMANDS_H_
