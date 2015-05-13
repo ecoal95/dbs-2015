@@ -103,26 +103,9 @@ Se puede apreciar en la ayuda de los comandos que hay funcionalidad no requerida
 
 No se han hecho entradas interactivas de algunas de ellas por cuestión de tiempo.
 
-# Detalles curiosos
+# Estructura del código
 
-* Se ha evitado el tener que especificar la id al insertar los datos mediante un uso de triggers y secuencias. Los triggers son autogenerados por el script `etc/sql/scripts/generate_triggers.sh`.
-* La vista cuenta los temas que no tienen ninguna pregunta asignada, eso se consigue con una subselect. El rendimiento probablemente sea peor que sin ella, pero tenemos el juego de datos esperado.
-* La documentación se genera automáticamente. Para generarla sólo es necesario usar `make docs` (teniendo `pandoc` y `LaTeX` instalados).
-* Se ha trabajado usando un repositorio `git`. Probablemente el código sea liberado tras el plazo de entrega de la práctica en [éste repositorio](http://github.com/ecoal95/dbs-2015).
-
-# Estructura del código SQL
-
-El código sql se encuentra en la carpeta `etc/sql/`. Bajo el directorio `etc/sql/src/` se encuentran:
- * `schema.sql`: El esquema de la base de datos.
- * `derived_and_triggers.sql`: El atributo derivado y los triggers necesarios para gestionarlo automáticamente.
- * `seeds.sql`: Inserción de valores de prueba de la base de datos.
- * `view.sql`: La vista requerida por el enunciado.
- * `oracle-drops.sql`: Drops de las tablas en *Oracle* (en *PostgreSQL* borramos la base de datos directamente).
-
-**Nota**: El esquema de la bd varía un poco con respecto al propuesto. Cada tema pertenece exclusivamente a una asignatura, y en vez de forzar órdenes, usamos un campo `priority`, que es más flexible. Se puede ver la estructura en el esquema de la carpeta `doc/`
-
-
-# Estructura del código C
+## C
 
 El código C relativo a la funcionalidad está todo en el directorio `src/`. El programa está organizado por subcomandos, declarados todos en el fichero principal `app.sc`:
 
@@ -172,6 +155,24 @@ Es equivalente a ejecutar:
 ```
 $ ./target/app question -l
 ```
+
+## SQL
+
+El código sql se encuentra en la carpeta `etc/sql/`. Bajo el directorio `etc/sql/src/` se encuentran:
+ * `schema.sql`: El esquema de la base de datos.
+ * `derived_and_triggers.sql`: El atributo derivado y los triggers necesarios para gestionarlo automáticamente.
+ * `seeds.sql`: Inserción de valores de prueba de la base de datos.
+ * `view.sql`: La vista requerida por el enunciado.
+ * `oracle-drops.sql`: Drops de las tablas en *Oracle* (en *PostgreSQL* borramos la base de datos directamente).
+
+**Nota**: El esquema de la bd varía un poco con respecto al propuesto. Cada tema pertenece exclusivamente a una asignatura, y en vez de forzar órdenes, usamos un campo `priority`, que es más flexible. Se puede ver la estructura en el esquema de la carpeta `doc/`
+
+# Detalles curiosos
+
+* Se ha evitado el tener que especificar la id al insertar los datos mediante un uso de triggers y secuencias. Los triggers son autogenerados por el script `etc/sql/scripts/generate_triggers.sh`.
+* La vista cuenta los temas que no tienen ninguna pregunta asignada, eso se consigue con una subselect. El rendimiento probablemente sea peor que sin ella, pero tenemos el juego de datos esperado.
+* La documentación se genera automáticamente. Para generarla sólo es necesario usar `make docs` (teniendo `pandoc` y `LaTeX` instalados).
+* Se ha trabajado usando un repositorio `git`. Probablemente el código sea liberado tras el plazo de entrega de la práctica en [éste repositorio](http://github.com/ecoal95/dbs-2015).
 
 # Capturas de pantalla
 
