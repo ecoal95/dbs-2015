@@ -6,14 +6,13 @@ INSERT INTO grades VALUES(4, 'Ingeniería Técnica en Informática de Sistemas')
 INSERT INTO grades VALUES(5, 'Grado en Ingeniería del Software');
 
 
-
 --Table "teachers"
 INSERT INTO teachers VALUES(1, '70015789L', 'Jacinto Pérez Hermoso', 'Automática');
 INSERT INTO teachers VALUES(2, '71085749F', 'Brígida Ferreira Santos', 'Robótica');
 INSERT INTO teachers VALUES(3, '78014787Y', 'Tomás Fernández Marín', 'Inteligencia Artifical');
 INSERT INTO teachers VALUES(4, '70032427T', 'Laura Galende Hernández', 'Informática');
 INSERT INTO teachers VALUES(5, '70011497H', 'José de Pedro Santos', 'Nanotecnología');
-
+INSERT INTO teachers VALUES(6, 'OPS$I0912324', 'Emilio Cobos Álvarez', 'Teoría de la computación');
 
 
 --Table "subjects"
@@ -22,7 +21,6 @@ INSERT INTO subjects VALUES(2, '00128E', 'Estructuras de Datos', 2);
 INSERT INTO subjects VALUES(3, '00021I', 'Informática Teórica', 3);
 INSERT INTO subjects VALUES(4, '00052O', 'Organización y gestión de empresas', 4);
 INSERT INTO subjects VALUES(5, '00073U', 'Sistemas Operativos', 5);
-
 
 
 --Table "themes"
@@ -54,13 +52,12 @@ INSERT INTO themes VALUES(18, 1, 'La empresa como realidad económica', 'Conjunt
 INSERT INTO themes VALUES(19, 1, 'La empresa como sistema', 'Teoría de sistemas aplicada a la empresa. Comportamiento, procesos de control y adaptación al entorno.', 4);
 INSERT INTO themes VALUES(20, 1, 'Inversión y financiación', 'La supervivencia de una empresa depende de su acertada planificación en cuanto a su política de inversiones, financiaciones y la continuidad de éstas en el tiempo.', 4);
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---Fivth subject
+--Fifth subject
 INSERT INTO themes VALUES(21, 1, 'Planificación del procesador', 'Mecanismos más comunes que poseen los sistemas operativos actuales para realizar la gestión del procesador.', 5);
 INSERT INTO themes VALUES(22, 1, 'Introducción a los Sistemas Operativos', 'Funciones, objetivos, evolución y tipos, así como componentes y estructura de un Sistema Operativo.', 5);
 INSERT INTO themes VALUES(23, 1, 'Descripción y control de procesos', 'Estados, implementación y control de los procesos.', 5);
 INSERT INTO themes VALUES(24, 1, 'Gestión de la memoria principal', 'Conceptos fundamentales, asignación contigua de memoria, paginación y segmentación.', 5);
 INSERT INTO themes VALUES(25, 1, 'Gestón de la memoria virtual', 'Paginación bajo demanda, prepaginación, reemplazo de páginas, gestión del conjunto residente, control de carga y ejemplos de gestión de memoria.', 5);
-
 
 
 --Table "questions"
@@ -98,7 +95,6 @@ INSERT INTO questions (id, statement) VALUES(22, '¿Cuáles son las funciones de
 INSERT INTO questions (id, statement) VALUES(23, '¿Qué es un proceso?');
 INSERT INTO questions (id, statement) VALUES(24, '¿Qué problemas puede ocasionar la multiprogramación?');
 INSERT INTO questions (id, statement) VALUES(25, '¿En qué consiste la paginación bajo demanda?');
-
 
 
 --Table "answers"
@@ -246,7 +242,7 @@ INSERT INTO answers VALUES(513, 'Reubicación del código', 0, 2, 24);
 INSERT INTO answers VALUES(514, 'Todas las demás', 1, 3, 24);
 INSERT INTO answers VALUES(515, 'Protección de la memoria de cada proceso', 0, 4, 24);
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
---Twenty fivth question
+--Twenty fifth question
 INSERT INTO answers VALUES(516, 'En dividir el programa en páginas/marcos y cargar en memoria secundaria todos', 0, 1, 25);
 INSERT INTO answers VALUES(517, 'En dividir el programa en páginas/marcos y cargar en memoria secundaria sólo los que se estén usando', 0, 2, 25);
 INSERT INTO answers VALUES(518, 'En dividir el programa en páginas/marcos y cargar en memoria principal todos', 0, 3, 25);
@@ -326,3 +322,4 @@ INSERT INTO subjects_teachers VALUES(2, 2);
 INSERT INTO subjects_teachers VALUES(3, 3);
 INSERT INTO subjects_teachers VALUES(4, 4);
 INSERT INTO subjects_teachers VALUES(5, 5);
+INSERT INTO subjects_teachers VALUES(6, 5);
