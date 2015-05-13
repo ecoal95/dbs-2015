@@ -1,5 +1,3 @@
-# Documentación de la práctica
-
 # Descripción de las tablas generadas
 
 ## Diseño conceptual (diagrama entidad relación)
@@ -28,9 +26,101 @@ El modelo relacional, siguiendo las anteriores convenciones, quedaría:
 * **exams** (**id**, year, convocatory, *subject\_id*)
 * **questions_themes** (**_question\_id_**, **_theme\_id_**)
 * **exams_questions** (**_question\_id_**, **_exam\_id_**, correct\_answer\_count, incorrect\_answer\_count, unreplied\_answer\_count)
-* **subjects_teachers** (**_subject\_id_**, **_teacher_id_**)
+* **subjects_teachers** (**_subject\_id_**, **_teacher\_id_**)
 
 Es apreciable que todas las tablas identificadas por un campo `id` (superclave) están en FNBC.
+
+# Compilación y creación de las tablas
+
+Desde la carpeta del proyecto ejecutar:
+
+```
+$ ./configure
+$ make
+$ cd etc/sql && make
+```
+
+**Nota**: en olivo, `make` debe ser sustituido por `gmake`
+
+El primer `make` compilará la aplicación en el directorio `target/`, mientras que el segundo creará las tablas, el atributo derivado, la vista, e insertará los datos de prueba.
+
+## Multiplataforma
+
+La aplicación está hecha para que sea funcional tanto en el entorno *Oracle* como en un entorno local con *PostgreSQL* y *ecpg* (sólo consultas, ver abajo).
+
+Por lo tanto, dadas las diferencias entre un sistema y otro hemos dividido los makefiles en: `oracle.mk` (exclusivro para entorno de *Oracle*), `local.mk` (exclusivo para *PostgreSQL*) y `common.mk` (funcionalidad común, la mayoría).
+
+El script `configure` se encarga de detectar la plataforma y generar el `Makefile` adecuado.
+
+### Notas acerca de la compilación en *Oracle*
+Usamos un pequeño archivo sh (`oracle-prepro`) para poder compilar con una interfaz similar a la de `gcc` o `ecpg` (compila el archivo pasado como segundo argumento con las opciones deseadas). Usamos la opción `DYNAMIC=ORACLE` ya que con esta configuración el mensaje de error en `sqlca.sqlerrm.sqlerrmc` funciona como se espera.
+
+Los **warnings** generados por `Pro*C` acerca del macro `CALL` deberán ser ignorados. Se deben a que usa argumentos variables (`C99`), y el preprocesador analiza código según `C90` (*Ya va siendo hora de actualizar... __ejem__*).
+
+### Notas acerca de la compilación en *PostgreSQL*
+En un entorno local con *PostgreSQL* las tablas se crean en una base de datos llamada `exams` a nombre del usuario por defecto (`postgres`).
+
+Para compilar se usa `clang`.
+
+En este entorno **la aplicación fallará al crear cualquier registro**. Esto es porque *PostgreSQL* no es compatible con la sintaxis de los triggers de *Oracle*, y por lo tanto la generación automática del atributo `id` no funcionará.
+
+No se insistió en este aspecto porque la prioridad era que fuera completamente funcional en *Oracle*. No obstante **no sería muy complicado** conseguir que fuera completamente funcional.
+
+# Ejecución
+
+La aplicación está diseñada para poder funcionar sin interacción del usuario, mediante una pequeña serie de comandos.
+
+Puedes ver los comandos ejecutando:
+
+```
+$ ./target/app help
+```
+
+## Ejecución en modo interactivo
+
+El comando `interactive` es un comando especial, ya que permite al usuario interaccionar directamente en lugar de mediante consola.
+
+Para usar la sesión interactiva usaremos:
+
+```
+$ ./target/app interactive
+```
+
+Donde se podrá ver un menú con el que el usuario puede interaccionar.
+
+## Funcionalidad no requerida
+
+Se puede apreciar en la ayuda de los comandos que hay funcionalidad no requerida para el enunciado. Algunos ejemplos son:
+
+```
+./target/app question -d <id>          # Borra una pregunta
+./target/app question -e <id> <statement> # Cambia el enunciado de una pregunta
+./target/app question -l [--detailed]  # Muestra todas las preguntas, opcionalmente con sus detalles
+./target/app exam -l <question_id>     # Lista todos los exámenes para una pregunta
+./target/app answer -l <question_id>   # Lista todas las respuestas para una pregunta
+./target/app answer -d <id>            # Borra una respuesta
+```
+
+No se han hecho entradas interactivas de algunas de ellas por cuestión de tiempo.
+
+# Detalles curiosos
+
+* Se ha evitado el tener que especificar la id al insertar los datos mediante un uso de triggers y secuencias. Los triggers son autogenerados por el script `etc/sql/scripts/generate_triggers.sh`.
+* La vista cuenta los temas que no tienen ninguna pregunta asignada, eso se consigue con una subselect. El rendimiento probablemente sea peor que sin ella, pero tenemos el juego de datos esperado.
+* La documentación se genera automáticamente. Para generarla sólo es necesario usar `make docs` (teniendo `pandoc` y `LaTeX` instalados).
+* Se ha trabajado usando un repositorio `git`. Probablemente el código sea liberado tras el plazo de entrega de la práctica en [éste repositorio](http://github.com/ecoal95/dbs-2015).
+
+# Estructura del código SQL
+
+El código sql se encuentra en la carpeta `etc/sql/`. Bajo el directorio `etc/sql/src/` se encuentran:
+ * `schema.sql`: El esquema de la base de datos.
+ * `derived_and_triggers.sql`: El atributo derivado y los triggers necesarios para gestionarlo automáticamente.
+ * `seeds.sql`: Inserción de valores de prueba de la base de datos.
+ * `view.sql`: La vista requerida por el enunciado.
+ * `oracle-drops.sql`: Drops de las tablas en *Oracle* (en *PostgreSQL* borramos la base de datos directamente).
+
+**Nota**: El esquema de la bd varía un poco con respecto al propuesto. Cada tema pertenece exclusivamente a una asignatura, y en vez de forzar órdenes, usamos un campo `priority`, que es más flexible. Se puede ver la estructura en el esquema de la carpeta `doc/`
+
 
 # Estructura del código C
 
@@ -69,7 +159,7 @@ Cada estructura de la lista contiene el alias del comando (la forma de llamarlo)
 
 Cada función es encargada de leer el resto de argumentos, y hacer lo que crea conveniente con ellos, y está declarada en un fichero `.h` con el mismo nombre, y definida en el fichero `.sc` correspondiente.
 
-Las funciones interaccionan entre ellas usando el macro `CALL` (`common.h`), que manipula los argumentos convenientemente para simular una llamada desde la consola.
+Las funciones interaccionan entre ellas usando el macro `CALL` (`common.h`), que manipula los argumentos convenientemente para **simular una llamada desde la consola**.
 
 Así, escribir:
 
@@ -82,66 +172,6 @@ Es equivalente a ejecutar:
 ```
 $ ./target/app question -l
 ```
-
-# Estructura del código SQL
-
-El código sql se encuentra en la carpeta `etc/sql/`. Bajo el directorio `etc/sql/src/` se encuentran:
- * `schema.sql`: El esquema de la base de datos.
- * `derived_and_triggers.sql`: El atributo derivado y los triggers necesarios para gestionarlo automáticamente.
- * `seeds.sql`: Inserción de valores de prueba de la base de datos.
- * `view.sql`: La vista requerida por el enunciado.
- * `oracle-drops.sql`: Drops de las tablas en oracle (en postgresql borramos la base de datos directamente).
-
-**Nota**: El esquema de la bd varía un poco con respecto al propuesto. Cada tema pertenece exclusivamente a una asignatura, y en vez de forzar órdenes, usamos un campo `priority`, que es más flexible. Se puede ver la estructura en el esquema de la carpeta `doc/`
-
-# Compilación y ejecución
-
-Desde la carpeta del proyecto ejecutar:
-
-```
-$ ./configure
-$ make
-$ cd etc/sql && make
-```
-
-**Nota**: en olivo, `make` debe ser sustituido por `gmake`
-
-El primer `make` compilará la aplicación en el directorio `target/`, mientras que el segundo creará las tablas, el atributo derivado, la vista, e insertará los datos de prueba.
-
-Usamos un pequeño archivo (`oracle-prepro`) para poder compilar con una interfaz similar a la de `gcc` o `ecpg` (compila el archivo pasado como segundo argumento con las opciones deseadas). Usamos la opción `DYNAMIC=ORACLE` ya que con esta configuración el mensaje de error en `sqlca.sqlerrm.sqlerrmc` funciona como se espera.
-
-Los warnings generados por `Pro*C` acerca del macro `CALL` deberán ser ignorados. Se deben a que usa argumentos variables (`C99`), y el preprocesador analiza código según `C90` (*Ya va siendo hora de actualizar... __ejem__*).
-
-## Ejecución en modo interactivo
-
-El comando `interactive` es un comando especial, ya que permite al usuario interaccionar directamente en lugar de mediante consola. Para usar la sesión interactiva usaremos:
-
-```
-$ ./target/app interactive
-```
-
-Donde se podrá ver un menú con el que el usuario puede interaccionar.
-
-# Funcionalidad no requerida
-
-Se puede apreciar en la ayuda de los comandos que hay funcionalidad no requerida para el enunciado. Algunos ejemplos son:
-
-```
-./target/app question -d <id>          # Borra una pregunta
-./target/app question -e <id> <statement> # Cambia el enunciado de una pregunta
-./target/app question -l [--detailed]  # Muestra todas las preguntas, opcionalmente con sus detalles
-./target/app exam -l <question_id>     # Lista todos los exámenes para una pregunta
-./target/app answer -l <question_id>   # Lista todas las respuestas para una pregunta
-./target/app answer -d <id>            # Borra una respuesta
-```
-
-No se han hecho entradas interactivas de algunas de ellas para evitar complicar más.
-
-# Detalles curiosos
-
-Se ha evitado el tener que especificar la id al insertar los datos mediante un uso de triggers y secuencias. Los triggers son autogenerados por el script `etc/sql/scripts/generate_triggers.sh`.
-
-La vista cuenta los temas que no tienen ninguna pregunta asignada, eso se consigue con una subselect. El rendimiento probablemente sea peor que sin ella, pero tenemos el juego de datos esperado.
 
 # Capturas de pantalla
 
@@ -170,4 +200,3 @@ La vista cuenta los temas que no tienen ninguna pregunta asignada, eso se consig
 # Código fuente
 
 Se incluyen tanto los ficheros sql como los de C, no se incluye lo necesario para compilarlos sin embargo.
-

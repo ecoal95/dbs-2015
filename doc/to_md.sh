@@ -8,7 +8,7 @@ if [ "$extension" == "pc" -o "$extension" == "h" ]; then
     srctype="c"
 fi
 
-echo "## ${file:3}" # remove ../
+echo "### ${file:3}" # remove ../
 echo "\`\`\`$srctype"
 cat $1
 echo "\`\`\`"
