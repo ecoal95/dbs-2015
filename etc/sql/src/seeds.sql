@@ -322,4 +322,4 @@ INSERT INTO subjects_teachers VALUES(2, 2);
 INSERT INTO subjects_teachers VALUES(3, 3);
 INSERT INTO subjects_teachers VALUES(4, 4);
 INSERT INTO subjects_teachers VALUES(5, 5);
-INSERT INTO subjects_teachers VALUES(6, 5);
+INSERT INTO subjects_teachers VALUES(5, 6);
