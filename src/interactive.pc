@@ -8,6 +8,8 @@
 
 void crear_pregunta() {
     char buffer[256] = {0};
+    int priority = 0;
+    char priority_str[20] = {0};
     char resp;
     char* question_id = NULL;
     printf("Introduce un enunciado: \n");
@@ -19,6 +21,7 @@ void crear_pregunta() {
     question_id = str_copy(appcom.ret.str_value);
 
     while ( 1 ) {
+        priority++;
         printf("Quieres introducir una respuesta? ");
         resp = get_bool();
 
@@ -28,13 +31,15 @@ void crear_pregunta() {
         printf("Introduce la respuesta:\n");
         get_str(buffer, sizeof(buffer));
 
-        printf("Es una respuesta correcta?\n");
+        printf("Es una respuesta correcta? ");
         resp = get_bool();
 
+        snprintf(priority_str, sizeof(priority_str), "%d", priority);
+
         if ( resp )
-            CALL(answer, "-a", question_id, buffer, "--correct");
+            CALL(answer, "-a", question_id, buffer, priority_str, "--correct");
         else
-            CALL(answer, "-a", question_id, buffer);
+            CALL(answer, "-a", question_id, buffer, priority_str);
 
         printf("Respuesta creada correctamente (id: %d)\n", appcom.ret.int_value);
     }

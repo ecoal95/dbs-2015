@@ -6,7 +6,9 @@ CREATE OR REPLACE VIEW questions_counter AS
         themes.subject_id,
         themes.id AS theme_id,
         -- We want to count all the themes, not just those who have at least one question
-        (SELECT COUNT(qt.question_id) FROM questions_themes qt WHERE qt.theme_id = themes.id) AS question_count
+        (SELECT COUNT(qt.question_id)
+            FROM questions_themes qt
+            WHERE qt.theme_id = themes.id) AS question_count
     FROM teachers, subjects_teachers, themes
     WHERE
         teachers.id = subjects_teachers.teacher_id AND

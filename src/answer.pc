@@ -7,32 +7,42 @@ int answer(int argc, char** argv) {
     EXEC SQL WHENEVER SQLERROR DO handle_error();
     EXEC SQL BEGIN DECLARE SECTION;
     int id;
+    int priority = 1;
     int is_correct = 0;
     int question_id;
     varchar title[255] = {0};
     EXEC SQL END DECLARE SECTION;
 
-    if ( argc < 1 || argc > 4 )
+    if ( argc < 1 || argc > 5 )
         ARGUMENT_ERROR();
 
     /// Add a new question
     if ( strcmp(argv[0], "-a") == 0 ) {
         argc--; argv++;
 
-        if ( argc < 2 || argc > 3 )
+        if ( argc < 2 || argc > 4 )
             ARGUMENT_ERROR();
 
-        if ( argc == 3 ) {
-            if ( strcmp(argv[2], "--correct") == 0 || strcmp(argv[2], "-c") == 0 )
+        if ( argc > 2 ) {
+            if ( strcmp(argv[argc - 1], "--correct") == 0 ||
+                 strcmp(argv[argc - 1], "-c") == 0 ) {
                 is_correct = 1;
-            else
-                ARGUMENT_ERROR();
+
+                if ( argc == 4 )
+                    priority = atoi(argv[2]);
+            } else {
+                if ( argc == 4 )
+                    ARGUMENT_ERROR();
+                else
+                    priority = atoi(argv[argc - 1]);
+            }
         }
 
         question_id = atoi(argv[0]);
 
         COPY_TO_VARCHAR(title, argv[1], 255);
-        EXEC SQL INSERT INTO answers (question_id, title, is_correct) VALUES (:question_id, :title, :is_correct)
+        EXEC SQL INSERT INTO answers (question_id, title, priority, is_correct)
+            VALUES (:question_id, :title, :priority, :is_correct)
             RETURNING id INTO :id;
 
         APPCOM_RET_INT(id);

@@ -1,7 +1,0 @@
-- Faltan las screenshots relativas al funcionamiento de la aplicación de SQL inmerso en C.
-- No está incluido el código relativo al trigger autogenerable, así como tampoco lo referente a los makefile, sólo SQL inmerso en C y SQL.
-- He modificado el diagrama del modelo entidad relación para que reproduzca fielmente lo que tenemos actualmente.
-- El diseño lógico relacional lo he puesto según el estilo que ella tiene en el PDF con la "solución" que subió a Studium.
-- He cambiado, también, algún aspecto de las "convenciones".
-- La "memoria" la subo también en PDF aunque todavía quede algún detalle de poner, para contemplar la vista previa.
-- Comentar otros aspectos en persona.

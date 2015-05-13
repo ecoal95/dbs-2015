@@ -1,5 +1,37 @@
 # Documentación de la práctica
 
+# Descripción de las tablas generadas
+
+## Diseño conceptual (diagrama entidad relación)
+
+El diagrama ha sido generado con la herramienta *GNU DIA*. Ésta herramienta no deja usar flechas dobles en las asociaciones entre clases UML, por lo que se usará una flecha para asociaciones con cardinalidad máxima n, y no se usará flecha en el lado de la asociación con cardinalidad máxima 1.
+
+![Diagrama](img/schema.png)
+
+### Convenciones utilizadas
+* Si un atributo tiene varias palabras en su nombre, se separarán con barras bajas.
+* Las tablas que representan una entidad se llamarán como la entidad, pluralizado.
+* Las tablas para relaciones `n-m` se designarán mediante el nombre las entidades relacionadas, ordenadas alfabéticamente y pluralizadas. (Ejemplo: `teachers_subjects`).
+* Las claves primarias preferiblemente tendrán el nombre `id`, mientras las claves foráneas seguirán la forma `<entidad>_id`.
+* Se prefiere usar un atributo `priority` para ordenar en vez de órdenes fijos y únicos: No sólo simplifica el diseño sino que es más flexible.
+
+## Relacional
+
+El modelo relacional, siguiendo las anteriores convenciones, quedaría:
+
+* **grades** (**id**, name)
+* **teachers** (**id**, dni, name, knowledge\_field)
+* **subjects** (**id**, code, name, *grade\_id*)
+* **themes** (**id**, priority, name, description, *subject\_id*)
+* **questions** (**id**, statement)
+* **answers** (**id**, title, is\_correct, priority, *question\_id*)
+* **exams** (**id**, year, convocatory, *subject\_id*)
+* **questions_themes** (**_question\_id_**, **_theme\_id_**)
+* **exams_questions** (**_question\_id_**, **_exam\_id_**, correct\_answer\_count, incorrect\_answer\_count, unreplied\_answer\_count)
+* **subjects_teachers** (**_subject\_id_**, **_teacher_id_**)
+
+Es apreciable que todas las tablas identificadas por un campo `id` (superclave) están en FNBC.
+
 # Estructura del código C
 
 El código C relativo a la funcionalidad está todo en el directorio `src/`. El programa está organizado por subcomandos, declarados todos en el fichero principal `app.sc`:
@@ -48,7 +80,7 @@ CALL(question, "-l");
 Es equivalente a ejecutar:
 
 ```
-./target/app question -l
+$ ./target/app question -l
 ```
 
 # Estructura del código SQL
@@ -111,4 +143,31 @@ Se ha evitado el tener que especificar la id al insertar los datos mediante un u
 
 La vista cuenta los temas que no tienen ninguna pregunta asignada, eso se consigue con una subselect. El rendimiento probablemente sea peor que sin ella, pero tenemos el juego de datos esperado.
 
+# Capturas de pantalla
+
+## Creación de las tablas
+
+![Creación de las tablas](img/create.png)
+
+## Inserción de datos
+
+![Inserción](img/seeds.png)
+
+## Atributo derivado
+
+![Derivado](img/derived_and_triggers.png)
+
+## Creación de la vista
+
+![Vista](img/view.png)
+
+## Aplicación (sesión interactiva)
+
+![App](img/app_interactive_1.png)
+![App](img/app_interactive_2.png)
+![App](img/app_interactive_3.png)
+
+# Código fuente
+
+Se incluyen tanto los ficheros sql como los de C, no se incluye lo necesario para compilarlos sin embargo.
 

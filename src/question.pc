@@ -102,7 +102,10 @@ int list_questions(int argc, char** argv) {
         SELECT id, statement FROM questions;
 
     EXEC SQL DECLARE questions_themes_cursor CURSOR FOR
-        SELECT questions.id, questions.statement FROM questions, questions_themes WHERE questions_themes.question_id = questions.id AND questions_themes.theme_id = :theme_id;
+        SELECT questions.id, questions.statement
+        FROM questions, questions_themes
+        WHERE questions_themes.question_id = questions.id AND
+              questions_themes.theme_id = :theme_id;
 
     if ( argc == 0 || (argc == 1 && detailed_mode) ) {
         EXEC SQL OPEN questions_cursor;
@@ -152,15 +155,24 @@ int list_questions_by_theme(int argc, char** argv) {
         ARGUMENT_ERROR();
 
     EXEC SQL DECLARE themes_cursor CURSOR FOR
-        SELECT themes.id, themes.priority, themes.name, subjects.id, subjects.name FROM themes, subjects WHERE themes.subject_id = subjects.id ORDER BY subjects.id, themes.priority;
+        SELECT themes.id, themes.priority, themes.name, subjects.id, subjects.name
+        FROM themes, subjects
+        WHERE themes.subject_id = subjects.id
+        ORDER BY subjects.id, themes.priority;
 
     EXEC SQL OPEN themes_cursor;
     while ( 1 ) {
-        EXEC SQL FETCH themes_cursor INTO :theme_id, :theme_priority, :theme_name, :subject_id, :subject_name;
+        EXEC SQL FETCH themes_cursor
+            INTO :theme_id, :theme_priority,
+                 :theme_name, :subject_id, :subject_name;
+
         if ( SQLCODE == NOT_FOUND )
             break;
 
-        printf("#%d - %d: %s (%s)\n", theme_id, theme_priority, str_trim_right(theme_name), str_trim_right(subject_name));
+        printf("#%d - %d: %s (%s)\n", theme_id,
+                                      theme_priority,
+                                      str_trim_right(theme_name),
+                                      str_trim_right(subject_name));
 
         snprintf(theme_id_str, sizeof(theme_id_str), "%d", theme_id);
         // argv[argc - 1] is required to be null

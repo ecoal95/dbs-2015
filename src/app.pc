@@ -29,7 +29,7 @@ struct command commands[] = {
         "Prints the question id on success to stdout." },
     { "answer", answer, "manages answers",
         "Usage: answer [args...]\n"
-        "\t-a\tcreates an answer\t-a <question_id> <statement> [--correct]\n"
+        "\t-a\tcreates an answer\t-a <question_id> <statement> [priority] [--correct]\n"
         "\t-l\tlist answers for a question\t-l <question_id>\n"
         "\t-d\tdeletes a question\t-d <id>" },
     { "exam", exam, "manages exams",
@@ -43,7 +43,9 @@ struct command commands[] = {
 
 
 void handle_error() {
-    fprintf(stderr, "[ERROR] %s | SQLSTATE(%s), SQLCODE(%ld)\n", sqlca.sqlerrm.sqlerrmc, SQLSTATE, SQLCODE);
+    fprintf(stderr, "[ERROR] %s | SQLSTATE(%s), SQLCODE(%ld)\n", sqlca.sqlerrm.sqlerrmc,
+                                                                 SQLSTATE,
+                                                                 SQLCODE);
     exit(1);
 }
 
