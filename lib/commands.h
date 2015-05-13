@@ -1,7 +1,7 @@
 /**
  * Simple command/subcommand library
  *
- * @author Emilio Cobos <emiliocobos@usal.es>
+ *
  * @license MIT
  *
  * NOTE: It's written in two minutes, don't blame :P
