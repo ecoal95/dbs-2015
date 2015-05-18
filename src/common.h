@@ -32,7 +32,7 @@ extern struct appcom appcom;
 #endif
 
 #define ARGUMENT_ERROR() do { \
-    fprintf(stderr, "Error: Unexpected number of arguments.\n"); \
+    fprintf(stderr, "Error: Unexpected number of arguments or argument.\n"); \
     fprintf(stderr, "Run with `help` to know more\n"); \
     exit(1); \
 } while (0)
