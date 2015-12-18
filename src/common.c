@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-struct appcom appcom = { { 0, "" } };
+struct appcom appcom = {{0, ""}};
 
 void get_str(char* buffer, size_t size) {
     printf("> ");
@@ -16,8 +16,8 @@ void get_str(char* buffer, size_t size) {
 char* str_trim_right(char* input) {
     size_t len = strlen(input);
 
-    while ( len-- )
-        if ( ! isspace(input[len]) )
+    while (len--)
+        if (!isspace(input[len]))
             break;
 
     input[len + 1] = '\0';
@@ -27,7 +27,7 @@ char* str_trim_right(char* input) {
 
 char* str_copy(const char* input) {
     size_t len = strlen(input);
-    char* ret = (char*) malloc(len + 1);
+    char* ret = (char*)malloc(len + 1);
 
     ret[len] = '\0';
     memcpy(ret, input, len);
@@ -41,9 +41,9 @@ char get_bool() {
         printf("(y/n): ");
         resp = tolower(getchar());
         FLUSH_STDIN();
-    } while ( ! ( resp == 'y' || resp == 'n' ) );
+    } while (!(resp == 'y' || resp == 'n'));
 
-    if ( resp == 'y' )
+    if (resp == 'y')
         return 1;
 
     return 0;

@@ -40,9 +40,12 @@ database:
 docs:
 	$(MAKE) -C doc
 
+autoformat:
+	for i in `find . -name '*.c'`; do echo "$$i"; clang-format-3.6 "$$i" > "$$i.formatted"; mv "$$i.formatted" "$$i"; done
+	for i in `find . -name '*.h'`; do echo "$$i"; clang-format-3.6 "$$i" > "$$i.formatted"; mv "$$i.formatted" "$$i"; done
 
 clean:
 	rm -r bin
 	rm -r target
 
-.PHONY: all clean database docs
+.PHONY: all clean database docs autoformat

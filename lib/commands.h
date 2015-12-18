@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 typedef int (*command_callback_t)(int, char**);
 
 // A command is described by:
@@ -33,15 +32,10 @@ struct command {
 // returns null if not found.
 //
 // NOTE: Command arrays must end in a command with no name
-const struct command*
-command_by_name(const struct command* commands,
-                const char* const name);
+const struct command* command_by_name(const struct command* commands, const char* const name);
 
 // Default help command if implementation doesn't provide one
-int command_default_help(const char* const program_name,
-                         const struct command* commands,
-                         int argc,
-                         char** argv);
+int command_default_help(const char* const program_name, const struct command* commands, int argc, char** argv);
 
 // Tries to execute a command in the command list. The command name must be
 // in argv[1]. Example usage:
